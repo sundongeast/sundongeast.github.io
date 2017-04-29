@@ -5,10 +5,7 @@
     <entry>
       <title><![CDATA[test]]></title>
       <url>/2017/04/28/test/</url>
-      <content type="html"><![CDATA[<!-- 标签别名 -->
-<blockquote class="blockquote-center"><p>blah blah blah </p>
-</blockquote>
-<h2 id="test"><a href="#test" class="headerlink" title="test"></a>test</h2><h3 id="测试1"><a href="#测试1" class="headerlink" title="测试1"></a>测试1</h3><figure class="highlight php"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="meta">&lt;?php</span></div><div class="line"> phpinfo();</div><div class="line"> <span class="meta">?&gt;</span></div></pre></td></tr></table></figure>
+      <content type="html"><![CDATA[<h2 id="test"><a href="#test" class="headerlink" title="test"></a>test</h2><h3 id="测试1"><a href="#测试1" class="headerlink" title="测试1"></a>测试1</h3><figure class="highlight php"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="meta">&lt;?php</span></div><div class="line"> phpinfo();</div><div class="line"> <span class="meta">?&gt;</span></div></pre></td></tr></table></figure>
 <h3 id="测试2"><a href="#测试2" class="headerlink" title="测试2"></a>测试2</h3><ul>
 <li><a href="http://www.baidu.com" target="_blank" rel="external">link</a></li>
 </ul>
