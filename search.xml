@@ -4,7 +4,7 @@
     
     <entry>
       <title><![CDATA[http协议]]></title>
-      <url>/2017/04/28/test/</url>
+      <url>/2017/04/28/http%E5%8D%8F%E8%AE%AE/</url>
       <content type="html"><![CDATA[<h2 id="http是什么？"><a href="#http是什么？" class="headerlink" title="http是什么？"></a>http是什么？</h2><p>HTTP 是基于 TCP/IP 协议的应用层协议。它不涉及数据包（packet）传输，主要规定了客户端和服务器之间的通信格式，默认使用80端口。</p>
 <h2 id="http的缺点？"><a href="#http的缺点？" class="headerlink" title="http的缺点？"></a>http的缺点？</h2><p>缺点：</p>
 <ul>
