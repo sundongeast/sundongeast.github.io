@@ -3,6 +3,39 @@
   
     
     <entry>
+      <title><![CDATA[面向对象之单例模式]]></title>
+      <url>/2017/05/08/%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1%E4%B9%8B%E5%8D%95%E4%BE%8B%E6%A8%A1%E5%BC%8F/</url>
+      <content type="html"><![CDATA[<h1 id="什么是单例模式？"><a href="#什么是单例模式？" class="headerlink" title="什么是单例模式？"></a>什么是单例模式？</h1><p>单例模式是一种常见的设计模式，单例就是单一的实例，在实际的应用中，我们发现，存在一些类只需要实例化出来一个对象，就是可以完成所有的操作和功能。计算机系统中，线程池、缓存、日志对象、对话框、打印机、数据库操作、显卡的驱动程序常被设计成单例。</p>
+<h1 id="单例模式的特点？"><a href="#单例模式的特点？" class="headerlink" title="单例模式的特点？"></a>单例模式的特点？</h1><ul>
+<li>只能有一个实例；</li>
+<li>必须自行创建这个实例；</li>
+<li>必须给其他对象提供这一实例；<h1 id="单例模式的好处？"><a href="#单例模式的好处？" class="headerlink" title="单例模式的好处？"></a>单例模式的好处？</h1></li>
+<li>改进系统的设计；</li>
+<li>对全局变量是一种改建；</li>
+<li>使用单例模式可以避免大量的new操作。因为每一次new操作都会消耗系统和内存的资源。<h2 id="单例实例"><a href="#单例实例" class="headerlink" title="单例实例"></a>单例实例</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div></pre></td><td class="code"><pre><div class="line">//典型的做法：三私一公</div><div class="line">class DB&#123;</div><div class="line"> 			//私有化静态变量保存全局实例</div><div class="line"> 			private static $instance=null;</div><div class="line"> 			//私有化构造方法，防止外界实例化对象</div><div class="line"> 			private function __construct()&#123;&#125;</div><div class="line"> 			//公有化静态方法，单例访问入口</div><div class="line"> 			public static function getInstance()&#123;</div><div class="line"> 				//判断当前对象是否已经存在</div><div class="line"> 				if (!self::$instance instanceof self) &#123;</div><div class="line"> 					self::$instance=new self();</div><div class="line"> 				&#125;</div><div class="line"> 				return $instance;</div><div class="line"> 			&#125;</div><div class="line"> 			//私有化clone函数，防止外部克隆对象</div><div class="line"> 			private function __clone()&#123;&#125;</div><div class="line"> 		&#125;</div><div class="line"> 		//实例化对象</div><div class="line"> 		$db1 = DB::getInstance();</div><div class="line"> 		$db2 = DB::getInstance();</div></pre></td></tr></table></figure>
+</li>
+</ul>
+<h2 id="友情链接"><a href="#友情链接" class="headerlink" title="友情链接"></a>友情链接</h2><ul>
+<li><a href="http://www.cnblogs.com/yangjinjin/archive/2013/01/31/2887492.html" target="_blank" rel="external">最美的痕迹</a></li>
+</ul>
+]]></content>
+      
+        <categories>
+            
+            <category> php </category>
+            
+        </categories>
+        
+        
+        <tags>
+            
+            <tag> 面向对象 </tag>
+            
+        </tags>
+        
+    </entry>
+    
+    <entry>
       <title><![CDATA[http协议]]></title>
       <url>/2017/04/28/http%E5%8D%8F%E8%AE%AE/</url>
       <content type="html"><![CDATA[<h2 id="http是什么？"><a href="#http是什么？" class="headerlink" title="http是什么？"></a>http是什么？</h2><p>HTTP 是基于 TCP/IP 协议的应用层协议。它不涉及数据包（packet）传输，主要规定了客户端和服务器之间的通信格式，默认使用80端口。</p>

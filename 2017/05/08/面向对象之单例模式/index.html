@@ -92,7 +92,7 @@
 <link href="/css/main.css?v=5.1.1" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="php," />
+  <meta name="keywords" content="面向对象," />
 
 
 
@@ -108,17 +108,17 @@
 
 
 
-<meta name="description" content="http是什么？HTTP 是基于 TCP/IP 协议的应用层协议。它不涉及数据包（packet）传输，主要规定了客户端和服务器之间的通信格式，默认使用80端口。 http的缺点？缺点：  每个TCP连接只能发送一个请求。发送数据完毕，连接就关闭，如果还要请求其他资源，就必须再新建一个连接。 TCP连接的新建成本很高，因为需要客户端和服务器三次握手，并且开始时发送速率较慢（slow start）。所">
-<meta name="keywords" content="php">
+<meta name="description" content="什么是单例模式？单例模式是一种常见的设计模式，单例就是单一的实例，在实际的应用中，我们发现，存在一些类只需要实例化出来一个对象，就是可以完成所有的操作和功能。计算机系统中，线程池、缓存、日志对象、对话框、打印机、数据库操作、显卡的驱动程序常被设计成单例。 单例模式的特点？ 只能有一个实例； 必须自行创建这个实例； 必须给其他对象提供这一实例；单例模式的好处？ 改进系统的设计； 对全局变量是一种改建">
+<meta name="keywords" content="面向对象">
 <meta property="og:type" content="article">
-<meta property="og:title" content="http协议">
-<meta property="og:url" content="http://yoursite.com/2017/04/28/http协议/index.html">
+<meta property="og:title" content="面向对象之单例模式">
+<meta property="og:url" content="http://yoursite.com/2017/05/08/面向对象之单例模式/index.html">
 <meta property="og:site_name" content="学海无涯">
-<meta property="og:description" content="http是什么？HTTP 是基于 TCP/IP 协议的应用层协议。它不涉及数据包（packet）传输，主要规定了客户端和服务器之间的通信格式，默认使用80端口。 http的缺点？缺点：  每个TCP连接只能发送一个请求。发送数据完毕，连接就关闭，如果还要请求其他资源，就必须再新建一个连接。 TCP连接的新建成本很高，因为需要客户端和服务器三次握手，并且开始时发送速率较慢（slow start）。所">
-<meta property="og:updated_time" content="2017-05-07T09:51:44.848Z">
+<meta property="og:description" content="什么是单例模式？单例模式是一种常见的设计模式，单例就是单一的实例，在实际的应用中，我们发现，存在一些类只需要实例化出来一个对象，就是可以完成所有的操作和功能。计算机系统中，线程池、缓存、日志对象、对话框、打印机、数据库操作、显卡的驱动程序常被设计成单例。 单例模式的特点？ 只能有一个实例； 必须自行创建这个实例； 必须给其他对象提供这一实例；单例模式的好处？ 改进系统的设计； 对全局变量是一种改建">
+<meta property="og:updated_time" content="2017-05-08T07:30:03.048Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="http协议">
-<meta name="twitter:description" content="http是什么？HTTP 是基于 TCP/IP 协议的应用层协议。它不涉及数据包（packet）传输，主要规定了客户端和服务器之间的通信格式，默认使用80端口。 http的缺点？缺点：  每个TCP连接只能发送一个请求。发送数据完毕，连接就关闭，如果还要请求其他资源，就必须再新建一个连接。 TCP连接的新建成本很高，因为需要客户端和服务器三次握手，并且开始时发送速率较慢（slow start）。所">
+<meta name="twitter:title" content="面向对象之单例模式">
+<meta name="twitter:description" content="什么是单例模式？单例模式是一种常见的设计模式，单例就是单一的实例，在实际的应用中，我们发现，存在一些类只需要实例化出来一个对象，就是可以完成所有的操作和功能。计算机系统中，线程池、缓存、日志对象、对话框、打印机、数据库操作、显卡的驱动程序常被设计成单例。 单例模式的特点？ 只能有一个实例； 必须自行创建这个实例； 必须给其他对象提供这一实例；单例模式的好处？ 改进系统的设计； 对全局变量是一种改建">
 
 
 
@@ -146,13 +146,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2017/04/28/http协议/"/>
+  <link rel="canonical" href="http://yoursite.com/2017/05/08/面向对象之单例模式/"/>
 
 
 
 
 
-  <title>http协议 | 学海无涯</title>
+  <title>面向对象之单例模式 | 学海无涯</title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -335,7 +335,7 @@
   
 
   <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/04/28/http协议/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/05/08/面向对象之单例模式/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Sun Dong">
@@ -356,7 +356,7 @@
             
             
               
-                http协议
+                面向对象之单例模式
               
             
           </h1>
@@ -371,8 +371,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-04-28T19:07:13+08:00">
-                2017-04-28
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-05-08T15:04:10+08:00">
+                2017-05-08
               </time>
             
 
@@ -411,7 +411,7 @@
 
         
           
-             <span id="/2017/04/28/http协议/" class="leancloud_visitors" data-flag-title="http协议">
+             <span id="/2017/05/08/面向对象之单例模式/" class="leancloud_visitors" data-flag-title="面向对象之单例模式">
                <span class="post-meta-divider">|</span>
                <span class="post-meta-item-icon">
                  <i class="fa fa-eye"></i>
@@ -439,16 +439,18 @@
       
 
       
-        <h2 id="http是什么？"><a href="#http是什么？" class="headerlink" title="http是什么？"></a>http是什么？</h2><p>HTTP 是基于 TCP/IP 协议的应用层协议。它不涉及数据包（packet）传输，主要规定了客户端和服务器之间的通信格式，默认使用80端口。</p>
-<h2 id="http的缺点？"><a href="#http的缺点？" class="headerlink" title="http的缺点？"></a>http的缺点？</h2><p>缺点：</p>
-<ul>
-<li>每个TCP连接只能发送一个请求。发送数据完毕，连接就关闭，如果还要请求其他资源，就必须再新建一个连接。</li>
-<li>TCP连接的新建成本很高，因为需要客户端和服务器三次握手，并且开始时发送速率较慢（slow start）。所以，HTTP 1.0版本的性能比较差。随着网页加载的外部资源越来越多，这个问题就愈发突出了。<h2 id="http状态码"><a href="#http状态码" class="headerlink" title="http状态码"></a>http状态码</h2><figure class="highlight php"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div></pre></td><td class="code"><pre><div class="line">五大类：</div><div class="line"><span class="number">100</span><span class="number">-199</span> 用于指定客户端应相应的某些动作。 </div><div class="line"><span class="number">200</span><span class="number">-299</span> 用于表示请求成功。 </div><div class="line"><span class="number">300</span><span class="number">-399</span> 用于已经移动的文件并且常被包含在定位头信息中指定新的地址信息。 </div><div class="line"><span class="number">400</span><span class="number">-499</span> 用于指出客户端的错误。 </div><div class="line"><span class="number">500</span><span class="number">-599</span> 用于支持服务器错误。</div><div class="line">常见状态码：</div><div class="line"><span class="number">200</span>（成功）：服务器已成功处理了请求。通常，这表示服务器提供了请求的网页</div><div class="line"><span class="number">201</span>（已创建）：请求成功并且服务器创建了新的资源</div><div class="line"><span class="number">202</span>（已接受）：服务器已接受请求，但尚未处理</div><div class="line"><span class="number">203</span>（非授权信息）：服务器已成功处理了请求，但返回的信息可能来自另一来源</div><div class="line"><span class="number">204</span>（无内容）：服务器成功处理了请求，但没有返回任何内容</div><div class="line"><span class="number">205</span>（重置内容）：服务器成功处理了请求，但没有返回任何内容</div><div class="line"><span class="number">206</span> （部分内容）：服务器成功处理了部分GET 请求</div><div class="line"><span class="number">404</span>（未找到）：服务器找不到请求的网页</div><div class="line"><span class="number">500</span>（服务器内部错误）：服务器遇到错误，无法完成请求</div></pre></td></tr></table></figure>
+        <h1 id="什么是单例模式？"><a href="#什么是单例模式？" class="headerlink" title="什么是单例模式？"></a>什么是单例模式？</h1><p>单例模式是一种常见的设计模式，单例就是单一的实例，在实际的应用中，我们发现，存在一些类只需要实例化出来一个对象，就是可以完成所有的操作和功能。计算机系统中，线程池、缓存、日志对象、对话框、打印机、数据库操作、显卡的驱动程序常被设计成单例。</p>
+<h1 id="单例模式的特点？"><a href="#单例模式的特点？" class="headerlink" title="单例模式的特点？"></a>单例模式的特点？</h1><ul>
+<li>只能有一个实例；</li>
+<li>必须自行创建这个实例；</li>
+<li>必须给其他对象提供这一实例；<h1 id="单例模式的好处？"><a href="#单例模式的好处？" class="headerlink" title="单例模式的好处？"></a>单例模式的好处？</h1></li>
+<li>改进系统的设计；</li>
+<li>对全局变量是一种改建；</li>
+<li>使用单例模式可以避免大量的new操作。因为每一次new操作都会消耗系统和内存的资源。<h2 id="单例实例"><a href="#单例实例" class="headerlink" title="单例实例"></a>单例实例</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div></pre></td><td class="code"><pre><div class="line">//典型的做法：三私一公</div><div class="line">class DB&#123;</div><div class="line"> 			//私有化静态变量保存全局实例</div><div class="line"> 			private static $instance=null;</div><div class="line"> 			//私有化构造方法，防止外界实例化对象</div><div class="line"> 			private function __construct()&#123;&#125;</div><div class="line"> 			//公有化静态方法，单例访问入口</div><div class="line"> 			public static function getInstance()&#123;</div><div class="line"> 				//判断当前对象是否已经存在</div><div class="line"> 				if (!self::$instance instanceof self) &#123;</div><div class="line"> 					self::$instance=new self();</div><div class="line"> 				&#125;</div><div class="line"> 				return $instance;</div><div class="line"> 			&#125;</div><div class="line"> 			//私有化clone函数，防止外部克隆对象</div><div class="line"> 			private function __clone()&#123;&#125;</div><div class="line"> 		&#125;</div><div class="line"> 		//实例化对象</div><div class="line"> 		$db1 = DB::getInstance();</div><div class="line"> 		$db2 = DB::getInstance();</div></pre></td></tr></table></figure>
 </li>
 </ul>
-<p>#友情链接</p>
-<ul>
-<li><a href="http://www.ruanyifeng.com/blog/2016/08/http.html" target="_blank" rel="external">阮一峰的网络日志</a></li>
+<h2 id="友情链接"><a href="#友情链接" class="headerlink" title="友情链接"></a>友情链接</h2><ul>
+<li><a href="http://www.cnblogs.com/yangjinjin/archive/2013/01/31/2887492.html" target="_blank" rel="external">最美的痕迹</a></li>
 </ul>
 
       
@@ -500,7 +502,7 @@
       
         <div class="post-tags">
           
-            <a href="/tags/php/" rel="tag"># php</a>
+            <a href="/tags/面向对象/" rel="tag"># 面向对象</a>
           
         </div>
       
@@ -513,18 +515,14 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2017/05/08/面向对象之单例模式/" rel="next" title="面向对象之单例模式">
-                <i class="fa fa-chevron-left"></i> 面向对象之单例模式
-              </a>
-            
           </div>
 
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2017/04/28/hello-world/" rel="prev" title="Hello World">
-                Hello World <i class="fa fa-chevron-right"></i>
+              <a href="/2017/04/28/http协议/" rel="prev" title="http协议">
+                http协议 <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -717,7 +715,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#http是什么？"><span class="nav-number">1.</span> <span class="nav-text">http是什么？</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#http的缺点？"><span class="nav-number">2.</span> <span class="nav-text">http的缺点？</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#http状态码"><span class="nav-number">3.</span> <span class="nav-text">http状态码</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#什么是单例模式？"><span class="nav-number">1.</span> <span class="nav-text">什么是单例模式？</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#单例模式的特点？"><span class="nav-number">2.</span> <span class="nav-text">单例模式的特点？</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#单例模式的好处？"><span class="nav-number">3.</span> <span class="nav-text">单例模式的好处？</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#单例实例"><span class="nav-number">3.1.</span> <span class="nav-text">单例实例</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#友情链接"><span class="nav-number">3.2.</span> <span class="nav-text">友情链接</span></a></li></ol></li></ol></div>
             
 
           </div>
