@@ -92,7 +92,7 @@
 <link href="/css/main.css?v=5.1.1" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="php," />
+  <meta name="keywords" content="Hexo, NexT" />
 
 
 
@@ -108,17 +108,17 @@
 
 
 
-<meta name="description" content="http是什么？HTTP 是基于 TCP/IP 协议的应用层协议。它不涉及数据包（packet）传输，主要规定了客户端和服务器之间的通信格式，默认使用80端口。 http的缺点？缺点：  每个TCP连接只能发送一个请求。发送数据完毕，连接就关闭，如果还要请求其他资源，就必须再新建一个连接。 TCP连接的新建成本很高，因为需要客户端和服务器三次握手，并且开始时发送速率较慢（slow start）。所">
-<meta name="keywords" content="php">
+<meta name="description" content="查看有多少个IP访问：awk ‘{print $1}’ log_file|sort|uniq|wc -lPS: wc -l 看看有多少行 查看某一个页面被访问的次数：grep “/index.php” log_file | wc -l   查看每一个IP访问了多少个页面：awk ‘{++S[$1]} END {for (a in S) print a,S[a]}’ log_file &amp;gt; l">
+<meta name="keywords">
 <meta property="og:type" content="article">
-<meta property="og:title" content="http协议">
-<meta property="og:url" content="http://yoursite.com/2017/04/28/http协议/index.html">
+<meta property="og:title" content="LinLinux常用运维命令">
+<meta property="og:url" content="http://yoursite.com/2017/05/09/Linux常用运维命令/index.html">
 <meta property="og:site_name" content="学海无涯">
-<meta property="og:description" content="http是什么？HTTP 是基于 TCP/IP 协议的应用层协议。它不涉及数据包（packet）传输，主要规定了客户端和服务器之间的通信格式，默认使用80端口。 http的缺点？缺点：  每个TCP连接只能发送一个请求。发送数据完毕，连接就关闭，如果还要请求其他资源，就必须再新建一个连接。 TCP连接的新建成本很高，因为需要客户端和服务器三次握手，并且开始时发送速率较慢（slow start）。所">
-<meta property="og:updated_time" content="2017-05-07T09:51:44.848Z">
+<meta property="og:description" content="查看有多少个IP访问：awk ‘{print $1}’ log_file|sort|uniq|wc -lPS: wc -l 看看有多少行 查看某一个页面被访问的次数：grep “/index.php” log_file | wc -l   查看每一个IP访问了多少个页面：awk ‘{++S[$1]} END {for (a in S) print a,S[a]}’ log_file &amp;gt; l">
+<meta property="og:updated_time" content="2017-05-09T06:00:57.411Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="http协议">
-<meta name="twitter:description" content="http是什么？HTTP 是基于 TCP/IP 协议的应用层协议。它不涉及数据包（packet）传输，主要规定了客户端和服务器之间的通信格式，默认使用80端口。 http的缺点？缺点：  每个TCP连接只能发送一个请求。发送数据完毕，连接就关闭，如果还要请求其他资源，就必须再新建一个连接。 TCP连接的新建成本很高，因为需要客户端和服务器三次握手，并且开始时发送速率较慢（slow start）。所">
+<meta name="twitter:title" content="LinLinux常用运维命令">
+<meta name="twitter:description" content="查看有多少个IP访问：awk ‘{print $1}’ log_file|sort|uniq|wc -lPS: wc -l 看看有多少行 查看某一个页面被访问的次数：grep “/index.php” log_file | wc -l   查看每一个IP访问了多少个页面：awk ‘{++S[$1]} END {for (a in S) print a,S[a]}’ log_file &amp;gt; l">
 
 
 
@@ -146,13 +146,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2017/04/28/http协议/"/>
+  <link rel="canonical" href="http://yoursite.com/2017/05/09/Linux常用运维命令/"/>
 
 
 
 
 
-  <title>http协议 | 学海无涯</title>
+  <title>LinLinux常用运维命令 | 学海无涯</title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -335,7 +335,7 @@
   
 
   <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/04/28/http协议/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/05/09/Linux常用运维命令/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Sun Dong">
@@ -356,7 +356,7 @@
             
             
               
-                http协议
+                LinLinux常用运维命令
               
             
           </h1>
@@ -371,8 +371,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-04-28T19:07:13+08:00">
-                2017-04-28
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-05-09T13:50:54+08:00">
+                2017-05-09
               </time>
             
 
@@ -382,28 +382,6 @@
           </span>
 
           
-            <span class="post-category" >
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分类于</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/php/" itemprop="url" rel="index">
-                    <span itemprop="name">php</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
-          
 
           
             
@@ -411,7 +389,7 @@
 
         
           
-             <span id="/2017/04/28/http协议/" class="leancloud_visitors" data-flag-title="http协议">
+             <span id="/2017/05/09/Linux常用运维命令/" class="leancloud_visitors" data-flag-title="LinLinux常用运维命令">
                <span class="post-meta-divider">|</span>
                <span class="post-meta-item-icon">
                  <i class="fa fa-eye"></i>
@@ -439,17 +417,31 @@
       
 
       
-        <h2 id="http是什么？"><a href="#http是什么？" class="headerlink" title="http是什么？"></a>http是什么？</h2><p>HTTP 是基于 TCP/IP 协议的应用层协议。它不涉及数据包（packet）传输，主要规定了客户端和服务器之间的通信格式，默认使用80端口。</p>
-<h2 id="http的缺点？"><a href="#http的缺点？" class="headerlink" title="http的缺点？"></a>http的缺点？</h2><p>缺点：</p>
+        <ol>
+<li>查看有多少个IP访问：<br>awk ‘{print $1}’ log_file|sort|uniq|wc -l<br>PS: wc -l 看看有多少行</li>
+<li>查看某一个页面被访问的次数：<br>grep “/index.php” log_file | wc -l</li>
+</ol>
 <ul>
-<li>每个TCP连接只能发送一个请求。发送数据完毕，连接就关闭，如果还要请求其他资源，就必须再新建一个连接。</li>
-<li>TCP连接的新建成本很高，因为需要客户端和服务器三次握手，并且开始时发送速率较慢（slow start）。所以，HTTP 1.0版本的性能比较差。随着网页加载的外部资源越来越多，这个问题就愈发突出了。<h2 id="http状态码"><a href="#http状态码" class="headerlink" title="http状态码"></a>http状态码</h2><figure class="highlight php"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div></pre></td><td class="code"><pre><div class="line">五大类：</div><div class="line"><span class="number">100</span><span class="number">-199</span> 用于指定客户端应相应的某些动作。 </div><div class="line"><span class="number">200</span><span class="number">-299</span> 用于表示请求成功。 </div><div class="line"><span class="number">300</span><span class="number">-399</span> 用于已经移动的文件并且常被包含在定位头信息中指定新的地址信息。 </div><div class="line"><span class="number">400</span><span class="number">-499</span> 用于指出客户端的错误。 </div><div class="line"><span class="number">500</span><span class="number">-599</span> 用于支持服务器错误。</div><div class="line">常见状态码：</div><div class="line"><span class="number">200</span>（成功）：服务器已成功处理了请求。通常，这表示服务器提供了请求的网页</div><div class="line"><span class="number">201</span>（已创建）：请求成功并且服务器创建了新的资源</div><div class="line"><span class="number">202</span>（已接受）：服务器已接受请求，但尚未处理</div><div class="line"><span class="number">203</span>（非授权信息）：服务器已成功处理了请求，但返回的信息可能来自另一来源</div><div class="line"><span class="number">204</span>（无内容）：服务器成功处理了请求，但没有返回任何内容</div><div class="line"><span class="number">205</span>（重置内容）：服务器成功处理了请求，但没有返回任何内容</div><div class="line"><span class="number">206</span> （部分内容）：服务器成功处理了部分GET 请求</div><div class="line"><span class="number">404</span>（未找到）：服务器找不到请求的网页</div><div class="line"><span class="number">500</span>（服务器内部错误）：服务器遇到错误，无法完成请求</div></pre></td></tr></table></figure>
+<li>查看每一个IP访问了多少个页面：<br>awk ‘{++S[$1]} END {for (a in S) print a,S[a]}’ log_file &gt; log.txt<br>sort -n -t ‘ ‘ -k 2 log.txt # 配合sort进一步排序</li>
+<li>将每个IP访问的页面数进行从小到大排序：<br>awk ‘{++S[$1]} END {for (a in S) print S[a],a}’ log_file | sort -n</li>
+<li>查看某一个IP访问了哪些页面：<br>grep ^111.111.111.111 log_file| awk ‘{print $1,$7}’</li>
+<li>去掉搜索引擎统计的页面：<br>awk ‘{print $12,$1}’ log_file | grep ^\”Mozilla | awk ‘{print $2}’ |sort | uniq | wc -l</li>
+<li>查看2015年8月16日14时这一个小时内有多少IP访问:<br>awk ‘{print $4,$1}’ log_file | grep 16/Aug/2015:14 | awk ‘{print $2}’| sort | uniq | wc -l</li>
+<li><p>查看访问前十个ip地址</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">awk &apos;&#123;print $1&#125;&apos; |sort|uniq -c|sort -nr |head -10 access_log</div><div class="line">uniq -c 相当于分组统计并把统计数放在最前面</div><div class="line"></div><div class="line">cat access.log|awk &apos;&#123;print $1&#125;&apos;|sort|uniq -c|sort -nr|head -10 </div><div class="line"></div><div class="line">cat access.log|awk &apos;&#123;counts[$(11)]+=1&#125;; END &#123;for(url in counts) print counts[url], url&#125;</div></pre></td></tr></table></figure>
+</li>
+<li><p>访问次数最多的10个文件或页面</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">cat log_file|awk &apos;&#123;print $11&#125;&apos;|sort|uniq -c|sort -nr | head -10</div><div class="line"></div><div class="line">cat log_file|awk &apos;&#123;print $11&#125;&apos;|sort|uniq -c|sort -nr|head -20 awk &apos;&#123;print $1&#125;&apos; log_file |sort -n -r |uniq -c | sort -n -r | head -20 # 访问量最大的前20个ip</div></pre></td></tr></table></figure>
 </li>
 </ul>
-<p>#友情链接</p>
-<ul>
-<li><a href="http://www.ruanyifeng.com/blog/2016/08/http.html" target="_blank" rel="external">阮一峰的网络日志</a></li>
-</ul>
+<p>9、访问次数最多的10个文件或页面<br>cat log_file|awk ‘{print $11}’|sort|uniq -c|sort -nr | head -10</p>
+<p>cat log_file|awk ‘{print $11}’|sort|uniq -c|sort -nr|head -20 awk ‘{print $1}’ log_file |sort -n -r |uniq -c | sort -n -r | head -20 # 访问量最大的前20个ip<br>10、通过子域名访问次数，依据referer来计算，稍有不准<br>cat access.log | awk ‘{print $11}’ | sed -e ‘ s/http:\/\///‘ -e ‘ s/\/.<em>//‘ | sort | uniq -c | sort -rn | head -20<br>11、列出传输大小最大的几个文件<br>cat www.access.log |awk ‘($7~/.php/){print $10 “ “ $1 “ “ $4 “ “ $7}’|sort -nr|head -100<br>12、列出输出大于200000byte(约200kb)的页面以及对应页面发生次数<br>cat www.access.log |awk ‘($10 &gt; 200000 &amp;&amp; $7~/.php/){print $7}’|sort -n|uniq -c|sort -nr|head -100<br>13、如果日志最后一列记录的是页面文件传输时间，则有列出到客户端最耗时的页面<br>cat www.access.log |awk ‘($7~/.php/){print $NF “ “ $1 “ “ $4 “ “ $7}’|sort -nr|head -100<br>14、列出最最耗时的页面(超过60秒的)的以及对应页面发生次数<br>cat www.access.log |awk ‘($NF &gt; 60 &amp;&amp; $7~/.php/){print $7}’|sort -n|uniq -c|sort -nr|head -100<br>15、列出传输时间超过 30 秒的文件<br>cat www.access.log |awk ‘($NF &gt; 30){print $7}’|sort -n|uniq -c|sort -nr|head -20<br>16、列出当前服务器每一进程运行的数量，倒序排列<br>ps -ef | awk -F ‘ ‘ ‘{print $8 “ “ $9}’ |sort | uniq -c |sort -nr |head -20<br>17、查看apache当前并发访问数<br>对比httpd.conf中MaxClients的数字差距多少。<br>netstat -an | grep ESTABLISHED | wc -l<br>18、可以使用如下参数查看数据<br>ps -ef|grep httpd|wc -l<br>统计httpd进程数，连个请求会启动一个进程，使用于Apache服务器。<br>表示Apache能够处理1388个并发请求，这个值Apache可根据负载情况自动调整。<br>netstat -nat|grep -i “80”|wc -l<br>netstat -an会打印系统当前网络链接状态，而grep -i “80”是用来提取与80端口有关的连接的，wc -l进行连接数统计。<br>最终返回的数字就是当前所有80端口的请求总数。<br>netstat -na|grep ESTABLISHED|wc -l<br>netstat -an会打印系统当前网络链接状态，而grep ESTABLISHED 提取出已建立连接的信息。 然后wc -l统计。<br>最终返回的数字就是当前所有80端口的已建立连接的总数。<br>netstat -nat||grep ESTABLISHED|wc<br>可查看所有建立连接的详细记录<br>19、输出每个ip的连接数，以及总的各个状态的连接数<br>netstat -n | awk ‘/^tcp/ {n=split($(NF-1),array,”:”);if(n&lt;=2)++S[array[(1)]];else++S[array[(4)]];++s[$NF];++N} END {for(a in S){printf(“%-20s %s\n”, a, S[a]);++I}printf(“%-20s %s\n”,”TOTAL_IP”,I);for(a in s) printf(“%-20s %s\n”,a, s[a]);printf(“%-20s %s\n”,”TOTAL_LINK”,N);}’<br>20、其他的收集<br>分析日志文件下2012-05-04访问页面最高的前20个URL并排序<br>cat access.log |grep ‘04/May/2012’| awk ‘{print $11}’|sort|uniq -c|sort -nr|head -20<br>查询受访问页面的URL地址中 含有 www.abc.com 网址的 IP 地址<br>cat access_log | awk ‘($11~/\www.abc.com/){print $1}’|sort|uniq -c|sort -nr<br>获取访问最高的10个IP地址 同时也可以按时间来查询<br>cat linewow-access.log|awk ‘{print $1}’|sort|uniq -c|sort -nr|head -10<br>时间段查询日志时间段的情况<br>cat log_file | egrep ‘15/Aug/2015|16/Aug/2015’ |awk ‘{print $1}’|sort|uniq -c|sort -nr|head -10<br>分析2015/8/15到2015/8/16访问”/index.php?g=Member&amp;m=Public&amp;a=sendValidCode”的IP倒序排列<br>cat log_file | egrep ‘15/Aug/2015|16/Aug/2015’ | awk ‘{if($7 == “/index.php?g=Member&amp;m=Public&amp;a=sendValidCode”) print $1,$7}’|sort|uniq -c|sort -nr<br>($7~/.php/) $7里面包含.php的就输出,本句的意思是最耗时的一百个PHP页面<br>cat log_file |awk ‘($7~/.php/){print $NF “ “ $1 “ “ $4 “ “ $7}’|sort -nr|head -100<br>列出最最耗时的页面(超过60秒的)的以及对应页面发生次数</em><br>cat access.log |awk ‘($NF &gt; 60 &amp;&amp; $7~/.php/){print $7}’|sort -n|uniq -c|sort -nr|head -100<br>统计网站流量（G)<br>cat access.log |awk ‘{sum+=$10} END {print sum/1024/1024/1024}’<br>统计404的连接<br>awk ‘($9 ~/404/)’ access.log | awk ‘{print $9,$7}’ | sort<br>统计http status.<br>cat access.log |awk ‘{counts[$(9)]+=1}; END {for(code in counts) print code, counts[code]}’<br>cat access.log |awk ‘{print $9}’|sort|uniq -c|sort -rn<br>每秒并发：<br>watch “awk ‘{if($9~/200|30|404/)COUNT[$4]++}END{for( a in COUNT) print a,COUNT[a]}’ log_file|sort -k 2 -nr|head -n10”<br>带宽统计<br>cat apache.log |awk ‘{if($7~/GET/) count++}END{print “client_request=”count}’ cat apache.log |awk ‘{BYTE+=$11}END{print “client_kbyte_out=”BYTE/1024”KB”}’<br>找出某天访问次数最多的10个IP<br>cat /tmp/access.log | grep “20/Mar/2011” |awk ‘{print $3}’|sort |uniq -c|sort -nr|head<br>当天ip连接数最高的ip都在干些什么:<br>cat access.log | grep “10.0.21.17” | awk ‘{print $8}’ | sort | uniq -c | sort -nr | head -n 10<br>小时单位里ip连接数最多的10个时段<br>awk -vFS=”[:]” ‘{gsub(“-.*”,””,$1);num[$2” “$1]++}END{for(i in num)print i,num[i]}’ log_file | sort -n -k 3 -r | head -10<br>找出访问次数最多的几个分钟<br>awk ‘{print $1}’ access.log | grep “20/Mar/2011” |cut -c 14-18|sort|uniq -c|sort -nr|head<br>取5分钟日志<br>if [ $DATE_MINUTE != $DATE_END_MINUTE ] ;then #则判断开始时间戳与结束时间戳是否相等START_LINE=sed -n “/$DATE_MINUTE/=” $APACHE_LOG|head -n1#如果不相等，则取出开始时间戳的行号，与结束时间戳的行号<br>查看tcp的链接状态<br>netstat -nat |awk ‘{print $6}’|sort|uniq -c|sort -rn </p>
+<p>netstat -n | awk ‘/^tcp/ {++S[$NF]};END {for(a in S) print a, S[a]}’ </p>
+<p>netstat -n | awk ‘/^tcp/ {++state[$NF]}; END {for(key in state) print key,”\t”,state[key]}’ netstat -n | awk ‘/^tcp/ {++arr[$NF]};END {for(k in arr) print k,”\t”,arr[k]}’ </p>
+<p>netstat -n |awk ‘/^tcp/ {print $NF}’|sort|uniq -c|sort -rn </p>
+<p>netstat -ant | awk ‘{print $NF}’ | grep -v ‘[a-z]’ | sort | uniq -c<br>netstat -ant|awk ‘/ip:80/{split($5,ip,”:”);++S[ip[1]]}END{for (a in S) print S[a],a}’ |sort -n </p>
+<p>netstat -ant|awk ‘/:80/{split($5,ip,”:”);++S[ip[1]]}END{for (a in S) print S[a],a}’ |sort -rn|head -n 10 awk ‘BEGIN{printf (“http_code\tcount_num\n”)}{COUNT[$10]++}END{for (a in COUNT) printf a”\t\t”COUNT[a]”\n”}’<br>查找请求数前20个IP（常用于查找攻来源）：<br>netstat -anlp|grep 80|grep tcp|awk ‘{print $5}’|awk -F: ‘{print $1}’|sort|uniq -c|sort -nr|head -n20 netstat -ant |awk ‘/:80/{split($5,ip,”:”);++A[ip[1]]}END{for(i in A) print A[i],i}’ |sort -rn|head -n20<br>用tcpdump嗅探80端口的访问看看谁最高<br>tcpdump -i eth0 -tnn dst port 80 -c 1000 | awk -F”.” ‘{print $1”.”$2”.”$3”.”$4}’ | sort | uniq -c | sort -nr |head -20<br>查找较多time_wait连接<br>netstat -n|grep TIME_WAIT|awk ‘{print $5}’|sort|uniq -c|sort -rn|head -n20<br>找查较多的SYN连接<br>netstat -an | grep SYN | awk ‘{print $5}’ | awk -F: ‘{print $1}’ | sort | uniq -c | sort -nr | more<br>根据端口列进程<br>netstat -ntlp | grep 80 | awk ‘{print $7}’ | cut -d/ -f1<br>查看了连接数和当前的连接数<br>netstat -ant | grep $ip:80 | wc -l<br>netstat -ant | grep $ip:80 | grep EST | wc -l<br>查看IP访问次数<br>netstat -nat|grep “:80”|awk ‘{print $5}’ |awk -F: ‘{print $1}’ | sort| uniq -c|sort -n<br>Linux命令分析当前的链接状况<br>netstat -n | awk ‘/^tcp/ {++S[$NF]} END {for(a in S) print a, S[a]}’ watch “netstat -n | awk ‘/^tcp/ {++S[\$NF]} END {for(a in S) print a, S[a]}’” # 通过watch可以一直监控 LAST_ACK 5 关闭一个TCP连接需要从两个方向上分别进行关闭，双方都是通过发送FIN来表示单方向数据的关闭，当通信双方发送了最后一个FIN的时候，发送方此时处于LAST_ACK状态，当发送方收到对方的确认（Fin的Ack确认）后才真正关闭整个TCP连接；</p>
+<p>SYN_RECV 30 # 表示正在等待处理的请求数； ESTABLISHED 1597 # 表示正常数据传输状态； FIN_WAIT1 51 # 表示server端主动要求关闭tcp连接； FIN_WAIT2 504 # 表示客户端中断连接； TIME_WAIT 1057 # 表示处理完毕，等待超时结束的请求数；</p>
 
       
     </div>
@@ -498,12 +490,6 @@
 
     <footer class="post-footer">
       
-        <div class="post-tags">
-          
-            <a href="/tags/php/" rel="tag"># php</a>
-          
-        </div>
-      
 
       
         
@@ -513,18 +499,14 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2017/05/08/面向对象之单例模式/" rel="next" title="面向对象之单例模式">
-                <i class="fa fa-chevron-left"></i> 面向对象之单例模式
-              </a>
-            
           </div>
 
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2017/04/28/hello-world/" rel="prev" title="Hello World">
-                Hello World <i class="fa fa-chevron-right"></i>
+              <a href="/2017/05/09/PHP常用字符串函数/" rel="prev" title="PHP常用字符串函数">
+                PHP常用字符串函数 <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -574,17 +556,8 @@
       
 
       
-        <ul class="sidebar-nav motion-element">
-          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
-            文章目录
-          </li>
-          <li class="sidebar-nav-overview" data-target="site-overview">
-            站点概览
-          </li>
-        </ul>
-      
 
-      <section class="site-overview sidebar-panel">
+      <section class="site-overview sidebar-panel sidebar-panel-active">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
           <img class="site-author-image" itemprop="image"
                src="/uploads/avatar.png"
@@ -707,22 +680,6 @@
 
       </section>
 
-      
-      <!--noindex-->
-        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
-          <div class="post-toc">
-
-            
-              
-            
-
-            
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#http是什么？"><span class="nav-number">1.</span> <span class="nav-text">http是什么？</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#http的缺点？"><span class="nav-number">2.</span> <span class="nav-text">http的缺点？</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#http状态码"><span class="nav-number">3.</span> <span class="nav-text">http状态码</span></a></li></ol></div>
-            
-
-          </div>
-        </section>
-      <!--/noindex-->
       
 
       
