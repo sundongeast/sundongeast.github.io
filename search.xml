@@ -37,8 +37,11 @@ htmlspecialchars()：把一些特殊字符转换为 HTML 实体
 htmlspecialchars_decode()：把一些 HTML 实体转换为特殊字符，htmlspecialchars() 的反函数 
 </code></pre><p>字符串存储（转义）</p>
 <pre><code>addslashes()：对特殊字符加上转义字符。
-stripslashes()：addslashes() 的反函数。 
-</code></pre>]]></content>
+stripslashes()：addslashes() 的反函数。
+</code></pre><h2 id="友情链接"><a href="#友情链接" class="headerlink" title="友情链接"></a>友情链接</h2><ul>
+<li><a href="http://www.blogdaren.com/" target="_blank" rel="external">博客达人</a></li>
+</ul>
+]]></content>
       
         <categories>
             
