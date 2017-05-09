@@ -3,6 +3,59 @@
   
     
     <entry>
+      <title><![CDATA[PHP常用字符串函数]]></title>
+      <url>/2017/05/09/PHP%E5%B8%B8%E7%94%A8%E5%AD%97%E7%AC%A6%E4%B8%B2%E5%87%BD%E6%95%B0/</url>
+      <content type="html"><![CDATA[<p>字符串输出</p>
+<pre><code>echo()：输出一个或多个字符串
+print()：输出一个字符串
+printf()：输出格式化字符串 
+</code></pre><p>字符串去除</p>
+<pre><code>trim()：去除字符串 首尾 空白等特殊符号或指定字符序列
+ltrim()：去除字符串 首 空白等特殊符号或指定字符序列
+rtrim()：去除字符串 尾 空白等特殊符号或指定字符序列
+chop()：同 rtrim() 
+</code></pre><p>字符串连接</p>
+<pre><code>implode()：使用字符将数组的内容组合成一个字符串
+join()：同 implode() 
+</code></pre><p>字符串分割</p>
+<pre><code>explode()：使用一个字符串分割另一个字符串，将字符串分割到数组中 
+</code></pre><p>字符串获取</p>
+<pre><code>substr()：从字符串中获取其中的一部分
+strstr()：查找字符串在另一个字符串中第一次出现的位置，并返回从该位置到字符串结尾的所有字符
+subchr()：同 strstr()
+strrchr()：查找字符串在另一个字符串中最后一次出现的位置，并返回从该位置到字符串结尾的所有字符 
+</code></pre><p>字符串替换</p>
+<pre><code>substr_replace()：把字符串的一部分替换为另一个字符串
+str_replace()：使用一个字符串替换字符串中的另一些字符 
+</code></pre><p>字符串计算</p>
+<pre><code>strlen()：取得字符串的长度
+strpos()：定位字符串第一次出现的位置
+strrpos()：定位字符串最后一次出现的位置 
+</code></pre><p>字符串 XHTML 格式化显示</p>
+<pre><code>nl2br()：将换行符 n 转换成 XHTML 换行符
+htmlspecialchars()：把一些特殊字符转换为 HTML 实体
+htmlspecialchars_decode()：把一些 HTML 实体转换为特殊字符，htmlspecialchars() 的反函数 
+</code></pre><p>字符串存储（转义）</p>
+<pre><code>addslashes()：对特殊字符加上转义字符。
+stripslashes()：addslashes() 的反函数。 
+</code></pre>]]></content>
+      
+        <categories>
+            
+            <category> php </category>
+            
+        </categories>
+        
+        
+        <tags>
+            
+            <tag> PHP函数 </tag>
+            
+        </tags>
+        
+    </entry>
+    
+    <entry>
       <title><![CDATA[面向对象之工厂模式]]></title>
       <url>/2017/05/08/%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1%E4%B9%8B%E5%B7%A5%E5%8E%82%E6%A8%A1%E5%BC%8F/</url>
       <content type="html"><![CDATA[<h2 id="什么是工厂模式？"><a href="#什么是工厂模式？" class="headerlink" title="什么是工厂模式？"></a>什么是工厂模式？</h2><p>工厂模式通俗来说是指，为一些有着相同结构的类创建一个类族，并且为这个族群提供唯一一个入口类。</p>
