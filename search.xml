@@ -8,6 +8,7 @@
       <content type="html"><![CDATA[<blockquote class="blockquote-center"><p>天行健，君子当自强不息。<br>信仰开源、共享、互助，学习使人快乐。<br>当你感觉到疲惫时，想一想十一点的阿里，想一想凌晨的腾讯，想一想通宵的华为。想一想你颓废的过去，想一想你的未来。小伙子，加油吧。</p>
 </blockquote>
 <hr>
+<p><img src="&quot;/images/ali.jpg&quot;" alt="&quot;勿忘初心&quot;"> </p>
 <h2 id="PHP的快车道"><a href="#PHP的快车道" class="headerlink" title="PHP的快车道"></a>PHP的快车道</h2><ul>
 <li><a href="http://rango.swoole.com/archives/category/php" target="_blank" rel="external">韩天峰</a></li>
 <li><a href="http://www.laruence.com/" target="_blank" rel="external">风雪之隅</a></li>
@@ -144,6 +145,21 @@
 <p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="external">Generating</a></p>
 <h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo deploy</div></pre></td></tr></table></figure>
 <p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="external">Deployment</a></p>
+<h3 id="hexo插入图片"><a href="#hexo插入图片" class="headerlink" title="hexo插入图片"></a>hexo插入图片</h3><ul>
+<li>插入外部链接图片<br>  <img src="“图片地址”" alt="“图片描述”">  </li>
+<li>添加本地图片(在\hexo\source目录下新建images文件夹)<br>  <img src="/images/你的图片名字.JPG" alt="“图片描述”">  </li>
+<li><p>插入音乐(网易云音乐，找到喜欢的歌曲，点击分享按钮，把里面的代码复制下来，直接粘贴到博文中即可)</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">&lt;iframe frameborder=&quot;no&quot; border=&quot;0&quot; marginwidth=&quot;0&quot; marginheight=&quot;0&quot; width=330 height=86   </div><div class="line">    src=&quot;http://music.163.com/outchain/player?type=2&amp;id=25706282&amp;auto=0&amp;height=66&quot;&gt;  </div><div class="line">&lt;/iframe&gt;</div></pre></td></tr></table></figure>
+</li>
+<li><p>插入视频</p>
+<pre><code>Idina Menze和Caleb Hyles激情对唱Let It Go：  
+&lt;iframe   
+  height=498 width=510   
+  src=&quot;http://player.youku.com/embed/XNjcyMDU4Njg0&quot;   
+  frameborder=0 allowfullscreen&gt;  
+&lt;/iframe&gt;
+</code></pre></li>
+</ul>
 ]]></content>
       
         
