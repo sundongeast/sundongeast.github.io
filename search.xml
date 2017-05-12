@@ -44,6 +44,66 @@
     </entry>
     
     <entry>
+      <title><![CDATA[Markdown实用的语法]]></title>
+      <url>/2017/05/12/Markdown%E5%AE%9E%E7%94%A8%E7%9A%84%E8%AF%AD%E6%B3%95/</url>
+      <content type="html"><![CDATA[<h3 id="1-代码"><a href="#1-代码" class="headerlink" title="1. 代码"></a>1. 代码</h3><p>短代码区 `&lt;?php echo hello world。?&gt;<br>长代码区<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div></pre></td><td class="code"><pre><div class="line">    //世界是如此的美丽，你好世界</div><div class="line">    echo helloworld;</div><div class="line">?&gt;</div><div class="line">``` </div><div class="line">### 1.1 php代码区</div><div class="line">```php</div><div class="line">&lt;?php</div><div class="line">	</div><div class="line">	// 求两个日期的差数，例如2007-2-5 ~ 2007-3-6 的日期差数</div><div class="line">	echo  (mktime(0,0,0,3,6,2007) -  mktime(0,0,0,2,5,2007) )/(24*3600) ,&apos;&lt;br /&gt;&apos;; //29</div><div class="line">	echo ( strtotime(&apos;3/6/2007&apos;) - strtotime(&apos;2/5/2007&apos;) ) /(24*3600); //29</div><div class="line">?&gt;</div></pre></td></tr></table></figure></p>
+<p>右边是一个链接，格式为<code>[备注](连接)</code>：<a href="//www.baidu.com">这是一个链接</a>。<br>[你好世界][1]&lt;–左边字体变色，格式为：<code>[文字][1|2|3]</code>。<br>下边是一个图片，格式为<code>![备注](链接地址)</code>：<br><img src="https://www.zybuluo.com/static/img/toolbar-reader.jpg" alt="你好世界"></p>
+<h3 id="2-图标"><a href="#2-图标" class="headerlink" title="2.图标"></a>2.图标</h3><p><i class="icon-share"></i>转发，格式为：<br><i class="icon-file"></i>新建<br><i class="icon-trash"></i>删除<br><i class="icon-cloud"></i>云<br><i class="icon-reorder"></i>列表<br><i class="icon-pencil"></i>铅笔<br><i class="icon-fullscreen"></i>全屏<br><i class="icon-list"></i>列表<br><i class="icon-desktop"></i>电脑</p>
+<ul>
+<li>[ ] 空白框</li>
+<li>[x] 对勾</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>表格</th>
+<th style="text-align:right">表格</th>
+<th style="text-align:center">表格</th>
+<th style="text-align:right">表格</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>默认左</td>
+<td style="text-align:right">靠右</td>
+<td style="text-align:center">中间</td>
+<td style="text-align:right">右边</td>
+</tr>
+</tbody>
+</table>
+<h3 id="hexo插入图片"><a href="#hexo插入图片" class="headerlink" title="hexo插入图片"></a>hexo插入图片</h3><ul>
+<li>插入外部链接图片<br>  <img src="“图片地址”" alt="“图片描述”">  </li>
+<li>添加本地图片(在\hexo\source目录下新建images文件夹)<br>  <img src="/images/你的图片名字.JPG" alt="“图片描述”">  </li>
+<li><p>插入音乐(网易云音乐，找到喜欢的歌曲，点击分享按钮，把里面的代码复制下来，直接粘贴到博文中即可)</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">&lt;iframe frameborder=&quot;no&quot; border=&quot;0&quot; marginwidth=&quot;0&quot; marginheight=&quot;0&quot; width=330 height=86   </div><div class="line">    src=&quot;http://music.163.com/outchain/player?type=2&amp;id=25706282&amp;auto=0&amp;height=66&quot;&gt;  </div><div class="line">&lt;/iframe&gt;</div></pre></td></tr></table></figure>
+</li>
+<li><p>插入视频</p>
+<pre><code>Idina Menze和Caleb Hyles激情对唱Let It Go：  
+&lt;iframe   
+  height=498 width=510   
+  src=&quot;http://player.youku.com/embed/XNjcyMDU4Njg0&quot;   
+  frameborder=0 allowfullscreen&gt;  
+&lt;/iframe&gt;
+</code></pre></li>
+</ul>
+]]></content>
+      
+        <categories>
+            
+            <category> Web </category>
+            
+        </categories>
+        
+        
+        <tags>
+            
+            <tag> markDown </tag>
+            
+        </tags>
+        
+    </entry>
+    
+    <entry>
       <title><![CDATA[面向对象之工厂模式]]></title>
       <url>/2017/05/08/%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1%E4%B9%8B%E5%B7%A5%E5%8E%82%E6%A8%A1%E5%BC%8F/</url>
       <content type="html"><![CDATA[<h2 id="什么是工厂模式？"><a href="#什么是工厂模式？" class="headerlink" title="什么是工厂模式？"></a>什么是工厂模式？</h2><p>工厂模式通俗来说是指，为一些有着相同结构的类创建一个类族，并且为这个族群提供唯一一个入口类。</p>
