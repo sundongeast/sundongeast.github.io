@@ -115,7 +115,7 @@
 <meta property="og:url" content="http://yoursite.com/2017/05/14/PHP大小写敏感规则/index.html">
 <meta property="og:site_name" content="学海无涯">
 <meta property="og:description" content="PHP编码规范1.文件格式 对于只含有 php 代码的文件，我们将在文件结尾处忽略掉 “?&amp;gt;” 。这是为了防止多余的空格或者其它字符影响到代码。 缩进应该能够反映出代码的逻辑结果，尽量使用四个空格，禁止使用制表符TAB，因为这样能够保证有跨客户端编程器软件的灵活性。 变量赋值必须保持相等间距和排列。 每行代码长度应控制在80个字符以内，最长不超过120个字符。因为 linux 读入文件一般以">
-<meta property="og:updated_time" content="2017-05-14T08:24:38.329Z">
+<meta property="og:updated_time" content="2017-05-14T08:27:42.738Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="PHP大小写敏感规则">
 <meta name="twitter:description" content="PHP编码规范1.文件格式 对于只含有 php 代码的文件，我们将在文件结尾处忽略掉 “?&amp;gt;” 。这是为了防止多余的空格或者其它字符影响到代码。 缩进应该能够反映出代码的逻辑结果，尽量使用四个空格，禁止使用制表符TAB，因为这样能够保证有跨客户端编程器软件的灵活性。 变量赋值必须保持相等间距和排列。 每行代码长度应控制在80个字符以内，最长不超过120个字符。因为 linux 读入文件一般以">
@@ -477,8 +477,7 @@
 </ul>
 <figure class="highlight php"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"></div><div class="line"><span class="keyword">echo</span> <span class="keyword">__LINE__</span>;  <span class="comment">//输出5</span></div><div class="line"><span class="keyword">echo</span> <span class="keyword">__line__</span>;  <span class="comment">//输出6</span></div></pre></td></tr></table></figure>
 <h2 id="3-NULL-TRUE-FALSE不区大小写"><a href="#3-NULL-TRUE-FALSE不区大小写" class="headerlink" title="3.NULL,TRUE,FALSE不区大小写"></a>3.<a href="">NULL,TRUE,FALSE不区大小写</a></h2><figure class="highlight php"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div></pre></td><td class="code"><pre><div class="line"></div><div class="line">$a = <span class="keyword">null</span>;</div><div class="line">$b = <span class="keyword">NULL</span>;</div><div class="line"></div><div class="line">$c = <span class="keyword">TRUE</span>;</div><div class="line">$d = ture;</div><div class="line"></div><div class="line">$e = <span class="keyword">false</span>;</div><div class="line">$f = <span class="keyword">FALSE</span>;</div><div class="line"></div><div class="line">var_dump($a == $b);		<span class="comment">//bool(true) </span></div><div class="line">var_dump($c == $d);		<span class="comment">//bool(true) </span></div><div class="line">var_dump($e == $f);		<span class="comment">//bool(true)</span></div></pre></td></tr></table></figure>
-<h2 id="4-类型强制转换不区分大小写"><a href="#4-类型强制转换不区分大小写" class="headerlink" title="4.类型强制转换不区分大小写"></a>4.<a href="">类型强制转换不区分大小写</a></h2><ul>
-<li>(int)，(integer) – 转换成整型 </li>
+<h2 id="4-类型强制转换不区分大小写"><a href="#4-类型强制转换不区分大小写" class="headerlink" title="4.类型强制转换不区分大小写"></a>4.<span style="color:blue;">类型强制转换不区分大小写</span></h2><ul>
 <li>(bool)，(boolean) – 转换成布尔型 </li>
 <li>(float)，(double)，(real) – 转换成浮点型 </li>
 <li>(string) – 转换成字符串 </li>
@@ -486,7 +485,7 @@
 <li>(object) – 转换成对象 <figure class="highlight php"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line"><span class="meta">&lt;?php</span> </div><div class="line">$a=<span class="number">1</span>; </div><div class="line">var_dump($a); <span class="comment">//输出 int 1 </span></div><div class="line">$b=(STRING)$a; </div><div class="line">var_dump($b); <span class="comment">//输出string '1' (length=1) </span></div><div class="line">$c=(string)$a; </div><div class="line">var_dump($c); <span class="comment">//输出string '1' (length=1)</span></div></pre></td></tr></table></figure>
 </li>
 </ul>
-<h2 id="友情链接"><a href="#友情链接" class="headerlink" title="友情链接"></a>友情链接</h2><p><a href="http://blog.csdn.net/songkexin/article/details/6757779" target="_blank" rel="external">songkexin</a></p>
+<h2 id="友情链接"><a href="#友情链接" class="headerlink" title="友情链接"></a>友情链接</h2><p><a href="http://blog.csdn.net/songkexin/article/details/6757779" target="_blank" rel="external">songkexin</a><br><a href="http://www.cnblogs.com/lida/archive/2011/05/24/2055131.html" target="_blank" rel="external">笨鸟先飞</a></p>
 
       
     </div>
