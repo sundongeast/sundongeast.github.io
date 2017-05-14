@@ -44,6 +44,75 @@
     </entry>
     
     <entry>
+      <title><![CDATA[PHP大小写敏感规则]]></title>
+      <url>/2017/05/14/PHP%E5%A4%A7%E5%B0%8F%E5%86%99%E6%95%8F%E6%84%9F%E8%A7%84%E5%88%99/</url>
+      <content type="html"><![CDATA[<h1 id="PHP编码规范"><a href="#PHP编码规范" class="headerlink" title="PHP编码规范"></a><a href="">PHP编码规范</a></h1><h2 id="1-文件格式"><a href="#1-文件格式" class="headerlink" title="1.文件格式"></a><a href="">1.文件格式</a></h2><ul>
+<li>对于只含有 php 代码的文件，我们将在文件结尾处忽略掉 “?&gt;” 。这是为了防止多余的空格或者其它字符影响到代码。</li>
+<li>缩进应该能够反映出代码的逻辑结果，尽量使用四个空格，禁止使用制表符TAB，因为这样能够保证有跨客户端编程器软件的灵活性。</li>
+<li>变量赋值必须保持相等间距和排列。</li>
+<li>每行代码长度应控制在80个字符以内，最长不超过120个字符。因为 linux 读入文件一般以80列为单位，就是说如果一行代码超过80个字符，那么系统将为此付出额外操作指令。这个虽然看起来是小问题，但是对于追求完美的程序员来说也是值得注意并遵守的规范。</li>
+<li>每行结尾不允许有多余的空格。</li>
+</ul>
+<h2 id="2-命名约定"><a href="#2-命名约定" class="headerlink" title="2.命名约定"></a><a href="">2.命名约定</a></h2><ul>
+<li>类文件都是以<code>“.class.php“</code>为后缀，且类文件名只允许字母，使用驼峰法命名，并且首字母大写，例如：<code>DbMysql.class.php</code> 。</li>
+<li>配置和函数等其他类库文件之外的文件一般是分别以<code>“.inc.php“</code>和<code>”.php“</code>为后缀，且文件名命名使用小写字母和下划线的方式，多个单词之间以下 划线分隔，例如<code>config.inc.php</code> ， <code>common.php</code>，<code>install_function.php</code> 。</li>
+<li>确保文件的命名和调用大小写一致，是由于在类Unix系统上面，对大小写是敏感的。</li>
+<li>类名和文件名一致（包括上面说的大小写一致），且类名只允许字母，例如 <code>UserAction</code>类的文件命名是<code>UserAction.class.php</code>， </li>
+<li>控制器类以<code>Action</code>为后缀，例如 <code>UserAction</code>、<code>InfoAction</code> ，模型类以<code>Model</code>为后缀，例如<code>UserModel</code>、<code>InfoModel</code> ，其他类也分别以相应分类为后缀，例如<code>Service 、Widget</code>。</li>
+<li>方法名只允许由字母组成，下划线是不允许的，首字母要小写，其后每个单词首字母要大写，即所谓的<strong> “驼峰法命名” </strong>规则，且越详细越好，应该能够描述清楚该方法的功能，例如<code>switchModel</code>、<code>findPage</code>。</li>
+<li>属性的命名只允许由字母组成，下划线是不允许的，首字母要小写，其后每个单词首字母要大写，即所谓的 “驼峰法命名” 规则，例如<code>tablePrefix、tableName</code> 。</li>
+<li>对于对象成员的访问，我们必须始终使用 <code>“get”</code>和 <code>“set”</code> 方法。</li>
+<li>当类成员方法被声明为 <code>private</code> 时，必须分别以双下划线 “_<em>“为开头；被声明为 <code>protected</code> 时，必须分别以单下划线 “</em>“ 为开头；一般情况下的方法不含下划线。</li>
+<li>如果我们需要把一些经常使用的方法定义为全局函数，那么应该把它们以静态 (static) 的形式定义在类中。</li>
+<li>被声明为 private的类成员属性必须由双下划线 “_<em>“ 作为开头；被声明为 protected 的类成员属性必须由下划线 “</em>“ 作为开头；而声明为 public 的成员属性则在任何时候都不允许含有下划线。</li>
+<li>函数的命名使用小写字母和下划线的方式，且越详细越好，应该能够描述清楚该函数的功能，例如 get_client_ip 。</li>
+<li>当方法或函数参数不一定需要被赋值的时候，用 “null” 来代替 “false” 作为函数参数的默认值，除非该参数是 boolean 值。</li>
+<li>变量只允许由小写字母和下划线组成，且建议用描述性的变量的命名，越详细越好，以至于像 $i 或 $n 等等都是不鼓励使用的。</li>
+<li>类中的常量 constant 和全局范围内常量define，只能由大写字母和下划线组成，各个单词之间以下划线分割。</li>
+<li>boolean 值和 null 值都采用小写。<h1 id="php大小敏感规则"><a href="#php大小敏感规则" class="headerlink" title="php大小敏感规则"></a><a href="">php大小敏感规则</a></h1></li>
+</ul>
+<p>PHP对大小写敏感问题的处理比较混乱，写代码偶尔会出现问题。推荐大家始终坚持“<strong>大小写敏感</strong>”，遵循统一的代码规范。</p>
+<h2 id="1-变量名区分大小写"><a href="#1-变量名区分大小写" class="headerlink" title="1. 变量名区分大小写"></a>1. <a href="">变量名区分大小写</a></h2><p>所有变量均区分大小写，包括普通变量以及<code>$_GET,$_POST, $_REQUEST, $_COOKIE, $_SESSION, $GLOBALS, $_SERVER, $_FILES, $_ENV</code>等；<br><figure class="highlight php"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div></pre></td><td class="code"><pre><div class="line"></div><div class="line">$abc = <span class="string">'hello world'</span>;</div><div class="line"><span class="keyword">echo</span> $abc;	<span class="comment">//输出hello world；</span></div><div class="line"><span class="keyword">echo</span> $ABC;	<span class="comment">//Notice: Undefined variable: ABC</span></div><div class="line"><span class="keyword">echo</span> $aBc;	<span class="comment">//Notice: Undefined variable</span></div><div class="line"></div><div class="line">``` </div><div class="line"></div><div class="line"><span class="comment">## 2.[常量名默认区分大小写]()</span></div><div class="line">通常都写为大写。</div><div class="line"></div><div class="line">```php</div><div class="line"></div><div class="line">define(<span class="string">"ABCD"</span>,<span class="string">"HelloWorld"</span>);</div><div class="line"><span class="keyword">echo</span> ABCD;	<span class="comment">//输出HelloWorld</span></div><div class="line"><span class="keyword">echo</span> abcd;	<span class="comment">//Notice: Use of undefined constant abcd</span></div></pre></td></tr></table></figure></p>
+<h2 id="3-php-ini配置项指令区分大小写"><a href="#3-php-ini配置项指令区分大小写" class="headerlink" title="3.php.ini配置项指令区分大小写"></a>3.<a href="">php.ini配置项指令区分大小写</a></h2><ul>
+<li>如<code>file_uploads = 1</code>不能写成<code>File_Uploads = 1</code>;</li>
+</ul>
+<h1 id="大小写敏感"><a href="#大小写敏感" class="headerlink" title="大小写敏感"></a><a href="">大小写敏感</a></h1><h2 id="1-函数名、方法名、类名不区分大小写"><a href="#1-函数名、方法名、类名不区分大小写" class="headerlink" title="1.函数名、方法名、类名不区分大小写"></a>1.<a href="">函数名、方法名、类名不区分大小写</a></h2><ul>
+<li>推荐<strong>使用与定义时相同的“名字”</strong>；</li>
+</ul>
+<figure class="highlight php"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line"></div><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">show</span><span class="params">()</span></span>&#123;</div><div class="line">    <span class="keyword">echo</span> <span class="string">"hello world"</span>;</div><div class="line">&#125;</div><div class="line">show(); <span class="comment">//hello world;(推荐写法)</span></div><div class="line">SHOW(); <span class="comment">//hello world;</span></div></pre></td></tr></table></figure>
+<h2 id="2-魔术常量不区分大小写"><a href="#2-魔术常量不区分大小写" class="headerlink" title="2.魔术常量不区分大小写"></a>2.<a href="">魔术常量不区分大小写</a></h2><ul>
+<li>包括：<code>__LINE__、__FILE__、__DIR__、__FUNCTION__、__CLASS__、__METHOD__、 __NAMESPACE__</code>。</li>
+</ul>
+<figure class="highlight php"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"></div><div class="line"><span class="keyword">echo</span> <span class="keyword">__LINE__</span>;  <span class="comment">//输出5</span></div><div class="line"><span class="keyword">echo</span> <span class="keyword">__line__</span>;  <span class="comment">//输出6</span></div></pre></td></tr></table></figure>
+<h2 id="3-NULL-TRUE-FALSE不区大小写"><a href="#3-NULL-TRUE-FALSE不区大小写" class="headerlink" title="3.NULL,TRUE,FALSE不区大小写"></a>3.<a href="">NULL,TRUE,FALSE不区大小写</a></h2><figure class="highlight php"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div></pre></td><td class="code"><pre><div class="line"></div><div class="line">$a = <span class="keyword">null</span>;</div><div class="line">$b = <span class="keyword">NULL</span>;</div><div class="line"></div><div class="line">$c = <span class="keyword">TRUE</span>;</div><div class="line">$d = ture;</div><div class="line"></div><div class="line">$e = <span class="keyword">false</span>;</div><div class="line">$f = <span class="keyword">FALSE</span>;</div><div class="line"></div><div class="line">var_dump($a == $b);		<span class="comment">//bool(true) </span></div><div class="line">var_dump($c == $d);		<span class="comment">//bool(true) </span></div><div class="line">var_dump($e == $f);		<span class="comment">//bool(true)</span></div></pre></td></tr></table></figure>
+<h2 id="4-类型强制转换不区分大小写"><a href="#4-类型强制转换不区分大小写" class="headerlink" title="4.类型强制转换不区分大小写"></a>4.<a href="">类型强制转换不区分大小写</a></h2><ul>
+<li>(int)，(integer) – 转换成整型 </li>
+<li>(bool)，(boolean) – 转换成布尔型 </li>
+<li>(float)，(double)，(real) – 转换成浮点型 </li>
+<li>(string) – 转换成字符串 </li>
+<li>(array) – 转换成数组 </li>
+<li>(object) – 转换成对象 <figure class="highlight php"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line"><span class="meta">&lt;?php</span> </div><div class="line">$a=<span class="number">1</span>; </div><div class="line">var_dump($a); <span class="comment">//输出 int 1 </span></div><div class="line">$b=(STRING)$a; </div><div class="line">var_dump($b); <span class="comment">//输出string '1' (length=1) </span></div><div class="line">$c=(string)$a; </div><div class="line">var_dump($c); <span class="comment">//输出string '1' (length=1)</span></div></pre></td></tr></table></figure>
+</li>
+</ul>
+<h2 id="友情链接"><a href="#友情链接" class="headerlink" title="友情链接"></a>友情链接</h2><p><a href="http://blog.csdn.net/songkexin/article/details/6757779" target="_blank" rel="external">songkexin</a></p>
+]]></content>
+      
+        <categories>
+            
+            <category> php </category>
+            
+        </categories>
+        
+        
+        <tags>
+            
+            <tag> php </tag>
+            
+        </tags>
+        
+    </entry>
+    
+    <entry>
       <title><![CDATA[学习知识体系路线图]]></title>
       <url>/2017/05/13/%E5%AD%A6%E4%B9%A0%E7%9F%A5%E8%AF%86%E4%BD%93%E7%B3%BB%E8%B7%AF%E7%BA%BF%E5%9B%BE/</url>
       <content type="html"><![CDATA[<p><img src="/images/php知识结构图.jpg" alt="&quot;php知识结构图&quot;"><br><img src="/images/mysql知识结构图.jpg" alt="&quot;mysql知识结构图&quot;"><br><img src="/images/jquery知识结构图.jpg" alt="&quot;jquery知识结构图&quot;"><br><img src="/images/wechat知识结构图.jpg" alt="&quot;wechat知识结构图&quot;"><br><img src="/images/mongodb知识结构图.jpg" alt="&quot;mongodb知识结构图&quot;"><br><img src="/images/git知识结构图.jpg" alt="&quot;git知识结构图&quot;"><br><img src="/images/html5知识结构图.jpg" alt="&quot;html5知识结构图&quot;"><br><img src="/images/architecture知识结构图.jpg" alt="&quot;architecture知识结构图&quot;"><br><img src="/images/computernetworks知识结构图.jpg" alt="&quot;computernetworks知识结构图&quot;"><br><img src="/images/datastructure知识结构图.jpg" alt="&quot;datastructure知识结构图&quot;"> </p>
