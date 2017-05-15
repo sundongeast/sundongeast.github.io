@@ -44,6 +44,87 @@
     </entry>
     
     <entry>
+      <title><![CDATA[PHPStorm常用插件及快捷键]]></title>
+      <url>/2017/05/15/PHPStorm%E5%B8%B8%E7%94%A8%E6%8F%92%E4%BB%B6%E5%8F%8A%E5%BF%AB%E6%8D%B7%E9%94%AE/</url>
+      <content type="html"><![CDATA[<blockquote>
+<p><strong>有时候不逼自己一把，你都不知道什么叫做绝望。</strong></p>
+<p>PHPStorm自己封装的功能已经很强大了，插件可有可无，当然有一些插件安装之后可以更高提升工作效率，何乐而不为呢。</p>
+</blockquote>
+<h2 id="提高效率的插件"><a href="#提高效率的插件" class="headerlink" title="提高效率的插件"></a>提高效率的插件</h2><blockquote>
+<p>安装步骤：打开phpstorm，依次点击 File-&gt;Settings…-&gt;Plugins，此时会看到这样的一个界面 点击图中红框标注的按钮(Browse repositories)，再弹出的窗口上方搜索位置。</p>
+</blockquote>
+<ol>
+<li>CodeGlance  代码地图插件。</li>
+<li>Power Mode II 写代码不要太带感。</li>
+<li>Material Theme UI  好好爱护自己的眼睛。</li>
+<li>ThinkStorm    是PHPStorm的ThinkPHP插件。</li>
+<li>Emmet 部分特性支持不会是很好，开发前端神器。</li>
+</ol>
+<h2 id="PHPStrom快捷键，让你的效率事半功倍"><a href="#PHPStrom快捷键，让你的效率事半功倍" class="headerlink" title="PHPStrom快捷键，让你的效率事半功倍"></a>PHPStrom快捷键，让你的效率事半功倍</h2><pre><code class="php"><span class="number">1</span>、CTRL + D 复制当前行或复制选中内容 
+<span class="number">2</span>、CTRL + Y 删除当前行或选中内容所涉及的行 
+<span class="number">3</span>、CTRL + R 查找替换 
+<span class="number">4</span>、ALT + W 选中单词 
+<span class="number">5</span>、ALT + 上下箭头 向上向下函数间切换 
+<span class="number">6</span>、CTRL + SHIFT + V 显示最近粘贴板中的内容，选择后内容插入到光标位置 
+<span class="number">7</span>、CTRL + Q 显示说明文档 
+<span class="number">8</span>、CTRL + B 跳转到声明处
+
+<span class="number">9</span>、CTRL + N 类名查找 
+<span class="number">10</span>、CTRL + SHIFT + N 文件名查找 
+<span class="number">11</span>、CTRL + SHIFT + ALT + N 函数名查找
+
+<span class="number">12</span>、ALT + SHIFT + C 快速回顾最近修改的项目 
+<span class="number">13</span>、CTRL + SHIFT + I 查看变量初始化的值 
+<span class="number">14</span>、CTRL + ALT + T 插入环绕代码 
+<span class="number">15</span>、CTRL + ALT + F
+
+sqlyog 
+f12 对sql语句进行格式化 
+Ctrl + f12 对选中的sql语句进行格式化 
+shift+f12 对所有的sql语句进行格式化
+</code></pre>
+<blockquote>
+<p>高亮<br>CTRL+F   选中的文字,高亮显示 上下跳到下一个或者上一个<br>F2  高亮错误或警告快速定位<br>SHIFT+F2  高亮错误或警告快速定位<br>CTRL+SHIFT+F7  高亮显示多个关键字. </p>
+<p>本地历史VCS/SVN<br>Alt +反引号（’） 快速弹出VCS菜单<br>Ctrl + K         提交项目VCS<br>Ctrl + T         更新项目从VCS<br>Alt + Shift + C  查看最近发生的变化</p>
+<p>复制快捷方式<br>F5   拷贝文件快捷方式<br>CTRL+C   复制<br>CTRL+V   粘贴<br>CTRL+D   复制行<br>CTRL+X   剪 切,删除行<br>CTRL+SHIFT+V  可以复制多个文本 </p>
+<p>其他快捷方式<br>CTRL+Z        倒退(代码后悔)<br>CTRL+SHIFT+Z  向前<br>CTRL+H        显 示类结构图<br>Ctrl +F12      文件结构弹出<br>Ctrl+Shift+H  方法的层次结构<br>Ctrl+Alt+H    呼叫层次<br>CTRL+Q   显示代码注释<br>CTRL+W   选中代码，连续按会 有其他效果<br>Ctrl+Shift+W   减少当前选择到以前的状态<br>CTRL+B   转到声明，快速打开光标处的类或方法说明注释(CTRL + 鼠标单击 也可以)<br>CTRL+O   魔术方法<br>CTRL+/   注释//取消注释<br>CTRL+SHIFT+/  注释/<em>…</em>/<br>CTRL+ []   光标移动到 {}[]开头或结尾位置<br>CTRL+SHIFT+[]    选中块代码，可以快速复制<br>ctrl + ‘-/+’: 可以折叠项目中的任何代码块,包括htm中的任意&gt; nodetype=3的元素，function,或对象直接量等等。它不是选中折叠，而是自动识别折叠。<br>ctrl + ‘.’: 折叠选中的代码的代码</p>
+<p>其他快捷方式<br>CTRL+Z   倒退(代码后悔)<br>CTRL+SHIFT+Z  向前<br>CTRL+H   显 示类结构图<br>CTRL+Q   显示代码注释<br>CTRL+W   选中代码，连续按会 有其他效果<br>CTRL+B   快速打开光标处的类或方法<br>CTRL+O   魔术方法<br>CTRL+/   注释//<br>CTRL+SHIFT+/  注释/<em>…</em>/<br>ctrl+[]   匹配 {}[]<br>ctrl+shift+[]    选中块代码<br>ctrl + ‘-/+’: 可以折叠项目中的任何代码块,包括htm中的任意nodetype=3的元素，function,或对象直接量等等。它不是选中折叠，而是自动识别折叠。<br>ctrl + ‘.’: 折叠选中的代码的代码</p>
+<p>调试<br>F8步过<br>F7步入<br>Shift + F7智能进入<br>Shift + F8步骤<br>ALT + F9运行到光标<br>Alt + F8计算表达式<br>F9恢复程序<br>Ctrl + F8切换断点<br>Ctrl + Shift + F8查看断点</p>
+</blockquote>
+<h2 id="PHPStrom中链接SVN"><a href="#PHPStrom中链接SVN" class="headerlink" title="PHPStrom中链接SVN"></a>PHPStrom中链接SVN</h2><blockquote>
+<p>VCS是版本控制系统，svn是版本控制器<br> 打开<code>PhpStorm</code>，找到工具<code>VCS—&gt;Checkout from Version Control—&gt;Subversion</code> ，点击进入。<br><img src="http://images2015.cnblogs.com/blog/1091655/201701/1091655-20170120221933562-175029383.png" alt="步骤一"></p>
+<p>输入svn地址。<br>　　 点击页面中的“+”号，然后输入svn地址（就是上面svn建库的时候会产生一个URL地址）。点击OK。<br><img src="http://images2015.cnblogs.com/blog/1091655/201702/1091655-20170203163406808-729340847.png" alt="步骤二"></p>
+<p>选择导出文件，进行项目的检出</p>
+</blockquote>
+<p>　　这时候我们就能浏览到svn服务器上文件列表。选择我们要导出的文件，点击Checkout，进行文件的检出（导出）。<br><img src="http://images2015.cnblogs.com/blog/1091655/201702/1091655-20170203164534854-1665717838.png" alt="步骤三"></p>
+<blockquote>
+<p>报错处理<br>　　点击checkout，如果出现  Executable is not specified(未指定可执行项目) 提示；或者出现Connot run program “svn”(……): CreateProcess 　　　error=2,……   的报错，我们点击<br><img src="http://images2015.cnblogs.com/blog/1091655/201702/1091655-20170203185849276-1282468612.png" alt="步骤四"><br>点击设置，之后确定即可。<br><img src="http://images2015.cnblogs.com/blog/1091655/201702/1091655-20170203221120104-750052808.png" alt="步骤五"></p>
+<p>本地检出<br>   选择一个本地的目标目录，点击OK。选择需要更新到本地的版本，点击OK。<br>！<a href="http://images2015.cnblogs.com/blog/1091655/201702/1091655-20170203225526136-1457469298.png" target="_blank" rel="external">步骤六</a></p>
+<p>选择svn服务器版本，点击OK<br><img src="http://images2015.cnblogs.com/blog/1091655/201702/1091655-20170203172958198-262505511.png" alt="步骤七"></p>
+<p>　然后会弹出账号密码输入框<br><img src="http://images2015.cnblogs.com/blog/1091655/201702/1091655-20170203173242417-285099560.png" alt="步骤八"></p>
+<p>进行项目检出<br>　　输入用户名和密码后，点击确认,进行项目检出。第一次更新可能时间会长一点。耐心等待。完成后会询问你是否打开该项目，点击确定，进入项目。到此为止项目已经更新到本地。<br><img src="http://images2015.cnblogs.com/blog/1091655/201702/1091655-20170203173400792-1524311023.png" alt="步骤九"></p>
+<p>查看VCS目录<br>！<a href="http://images2015.cnblogs.com/blog/1091655/201702/1091655-20170203230315808-2040592402.png" target="_blank" rel="external">步骤十</a><br>接下来是一张汉化的图片，与上图内容一致，基本上英文都有翻译</p>
+</blockquote>
+<p><img src="http://images2015.cnblogs.com/blog/1091655/201702/1091655-20170203173716136-2105706815.png" alt="步骤十一"></p>
+<h2 id="友情链接"><a href="#友情链接" class="headerlink" title="友情链接"></a>友情链接</h2><p><a href="http://www.cnblogs.com/jingmin/p/6329556.html" target="_blank" rel="external">phpstorm中svn的使用</a><br><a href="http://blog.csdn.net/u010918847/article/details/52441266" target="_blank" rel="external">phpstorm 中使用database工具</a><br><a href="https://www.zhihu.com/question/53152420/answer/152805058" target="_blank" rel="external">phpstorm有哪些好用的插件?</a><br><a href="http://blog.csdn.net/Rodgexue/article/details/45173493" target="_blank" rel="external">phpStorm使用技巧小结</a></p>
+]]></content>
+      
+        <categories>
+            
+            <category> software </category>
+            
+        </categories>
+        
+        
+        <tags>
+            
+            <tag> phpstorm </tag>
+            
+        </tags>
+        
+    </entry>
+    
+    <entry>
       <title><![CDATA[PHP大小写敏感规则]]></title>
       <url>/2017/05/14/PHP%E5%A4%A7%E5%B0%8F%E5%86%99%E6%95%8F%E6%84%9F%E8%A7%84%E5%88%99/</url>
       <content type="html"><![CDATA[<h1 id="PHP编码规范"><a href="#PHP编码规范" class="headerlink" title="PHP编码规范"></a><span style="color:blue;">PHP编码规范</span></h1><h2 id="1-文件格式"><a href="#1-文件格式" class="headerlink" title="1.文件格式"></a><span style="color:blue;">1.文件格式</span></h2><ul>
