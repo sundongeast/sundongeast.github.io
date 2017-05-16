@@ -92,7 +92,7 @@
 <link href="/css/main.css?v=5.1.1" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="Hexo, NexT" />
+  <meta name="keywords" content="MySQL," />
 
 
 
@@ -108,17 +108,17 @@
 
 
 
-<meta name="description" content="君子修身养德，不以穷困而改志。">
-<meta name="keywords">
+<meta name="description" content="MySQL数据表操作数据的写操作1234567891011121314151617181920212223242526272829303132333435363738394041insert into tb_name set 字段1=值1，字段2=值2，…..;插入操作：	insert into 表名 value(数据);	insert into tb_name set 字段1=值1，字段2=值2">
+<meta name="keywords" content="MySQL">
 <meta property="og:type" content="article">
 <meta property="og:title" content="MySQL数据表操作">
 <meta property="og:url" content="http://yoursite.com/2017/05/16/MySQL数据表操作/index.html">
 <meta property="og:site_name" content="学海无涯">
-<meta property="og:description" content="君子修身养德，不以穷困而改志。">
-<meta property="og:updated_time" content="2017-05-16T14:55:56.150Z">
+<meta property="og:description" content="MySQL数据表操作数据的写操作1234567891011121314151617181920212223242526272829303132333435363738394041insert into tb_name set 字段1=值1，字段2=值2，…..;插入操作：	insert into 表名 value(数据);	insert into tb_name set 字段1=值1，字段2=值2">
+<meta property="og:updated_time" content="2017-05-16T15:26:08.651Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="MySQL数据表操作">
-<meta name="twitter:description" content="君子修身养德，不以穷困而改志。">
+<meta name="twitter:description" content="MySQL数据表操作数据的写操作1234567891011121314151617181920212223242526272829303132333435363738394041insert into tb_name set 字段1=值1，字段2=值2，…..;插入操作：	insert into 表名 value(数据);	insert into tb_name set 字段1=值1，字段2=值2">
 
 
 
@@ -381,6 +381,28 @@
           </span>
 
           
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/MySQL/" itemprop="url" rel="index">
+                    <span itemprop="name">MySQL</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
 
           
             
@@ -416,7 +438,9 @@
       
 
       
-        
+        <h1 id="MySQL数据表操作"><a href="#MySQL数据表操作" class="headerlink" title="MySQL数据表操作"></a>MySQL数据表操作</h1><h2 id="数据的写操作"><a href="#数据的写操作" class="headerlink" title="数据的写操作"></a>数据的写操作</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div></pre></td><td class="code"><pre><div class="line">insert into tb_name set 字段1=值1，字段2=值2，…..;</div><div class="line">插入操作：</div><div class="line">	insert into 表名 value(数据);</div><div class="line">	insert into tb_name set 字段1=值1，字段2=值2，…..;</div><div class="line">	insert into tb_name [字段列表] values(记录1)，（记录2）….；</div><div class="line">注意：</div><div class="line">	字段列表（不省略）：单个或者多个字段，字段的顺序不需要与数据表一致。</div><div class="line">	字段列表省略时，数据按照数据表的字段顺序进行填充。</div><div class="line">	数值要与字段列表中的字段一一对应。</div><div class="line">蠕虫复制:insert into tb_name (字段列表) select 字段列表 from 表名；</div><div class="line"></div><div class="line">update tb_name set 字段1=值1，字段2=值2,…[where 条件]；</div><div class="line">更新操作：</div><div class="line">	update tb_name set 字段1=值1，字段2=值2,…[where 条件]；</div><div class="line">注意:</div><div class="line">通常必须使用where条件来筛选所更新的记录。</div><div class="line">不添加where条件会导致整个数据表的对应字段数据被修改。</div><div class="line">where条件通常不可省略。如果省略，则更新整个数据表记录。</div><div class="line"></div><div class="line">删除操作：</div><div class="line">	delete from tb_name [where条件];</div><div class="line">delete from tb_name [where条件];</div><div class="line"></div><div class="line">	通常条件下，where子句不可以省略，省略时，删除整张数据表的数据。</div><div class="line">	对于有自增长属性的字段，删除整张表记录后，自增长的起始值不置1</div><div class="line"></div><div class="line">清空truncate操作：</div><div class="line">	truncate 表名；</div><div class="line">truncate 表名；</div><div class="line">	delete不加where条件，删除整个表的数据，auto_increment字段的值不清除（继续累加）。delete逐行删除。效率低。删除数据，不删除数据表结构。</div><div class="line">	truncate不能加where条件。自增长字段，值清除，从1开始。（销毁原来的数据表，并创建数据表）。一次性删除。删除数据，不删除结构。</div><div class="line">	drop删除数据库，数据表，字段。删除数据及结构。</div><div class="line">注意：</div><div class="line">	清空数据表的记录。</div><div class="line"></div><div class="line">delete/drop/trun比较：</div><div class="line">	delete不加where条件，删除整个表的数据，auto_increment字段的值不清除（继续累加）。delete逐行删除。效率低。删除数据，不删除数据表结构。</div><div class="line"></div><div class="line">	truncate不能加where条件。自增长字段，值清除，从1开始。（销毁原来的数据表，并创建数据表）。一次性删除。删除数据，不删除结构。</div><div class="line"></div><div class="line">	drop删除数据库，数据表，字段。删除数据及结构。</div></pre></td></tr></table></figure>
+<h2 id="数据的读操作"><a href="#数据的读操作" class="headerlink" title="数据的读操作"></a>数据的读操作</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div><div class="line">44</div><div class="line">45</div><div class="line">46</div><div class="line">47</div><div class="line">48</div><div class="line">49</div><div class="line">50</div><div class="line">51</div><div class="line">52</div><div class="line">53</div><div class="line">54</div><div class="line">55</div><div class="line">56</div><div class="line">57</div><div class="line">58</div><div class="line">59</div><div class="line">60</div><div class="line">61</div><div class="line">62</div><div class="line">63</div><div class="line">64</div><div class="line">65</div><div class="line">66</div><div class="line">67</div><div class="line">68</div><div class="line">69</div><div class="line">70</div><div class="line">71</div><div class="line">72</div><div class="line">73</div><div class="line">74</div><div class="line">75</div><div class="line">76</div><div class="line">77</div><div class="line">78</div><div class="line">79</div><div class="line">80</div><div class="line">81</div><div class="line">82</div><div class="line">83</div><div class="line">84</div><div class="line">85</div><div class="line">86</div><div class="line">87</div><div class="line">88</div><div class="line">89</div><div class="line">90</div><div class="line">91</div><div class="line">92</div><div class="line">93</div><div class="line">94</div><div class="line">95</div><div class="line">96</div><div class="line">97</div><div class="line">98</div><div class="line">99</div><div class="line">100</div><div class="line">101</div><div class="line">102</div><div class="line">103</div></pre></td><td class="code"><pre><div class="line"></div><div class="line">select 字段列表 from 表名 [where子句] [group by子句] [having子句] [order by子句] [limit 子句];</div><div class="line"></div><div class="line">mysql_affected_rows() 函数返回前一次 MySQL 操作所影响的记录行数,INSERT，UPDATE 或 DELETE 查询所影响的记录行数。</div><div class="line"></div><div class="line">返回值</div><div class="line">limit子句:限制输出的记录数</div><div class="line">	select 字段列表 from 表名 [where子句] [group by子句] [having子句] [order by子句] [limit 子句];</div><div class="line">	limit子句:限制输出的记录数</div><div class="line">		select 字段列表 from 表名 [where子句] [group by子句] [having子句] [order by子句] [limit 子句];</div><div class="line">		分页公式:offset=(page-1)*pagesize</div><div class="line"></div><div class="line">where条件查询：</div><div class="line">	select 字段列表 from tb_name [where子句]；</div><div class="line">	where 字段 in：in后面罗列字段可取的值，使用（）包括。</div><div class="line">	where…between val1 and val2</div><div class="line">	where 字段 is null：null不能使用一般的比较运算符比较。null不等于任何值，包括本省</div><div class="line">注意：</div><div class="line">where本质：</div><div class="line">where从句的字段必须来自数据表</div><div class="line"></div><div class="line">select语法高级:</div><div class="line">	select 字段列表 from 表名 [where子句] [group by子句] [having子句] [order by子句] [limit 子句];</div><div class="line">mysqli_affected_rows() 函数返回前一次 MySQL 操作（SELECT、INSERT、UPDATE、REPLACE、DELETE）所影响的记录行数。</div><div class="line"></div><div class="line">order by子句:</div><div class="line">	select 字段列表 from 表名 [where 子句] [group by 子句] [having子句] [order by子句];</div><div class="line">注意：</div><div class="line">	asc(ascend)升序，默认的排序规则</div><div class="line">	desc(descend)降序</div><div class="line">	同时使用多个字段进行排序（如果第一个字段值相等，使用第二个字段值进行排序）</div><div class="line">多个字段同时排序时，需要逐一指定排序规则，否则使用默认排序规则：</div><div class="line">	多个字段时，通常指定各个字段的排序规则</div><div class="line">默认排序规则为升序（asc）:</div><div class="line"></div><div class="line">having子句:</div><div class="line">	select 字段列表from 表名 [where子句] [group by子句] [having子句];</div><div class="line">注意：</div><div class="line">一般聚合函数和字段别名使用having进行查询。</div><div class="line">对分组结果集进行筛选，通常跟在group by后面</div><div class="line">	having相当于where</div><div class="line">	having后面可以是聚合函数	;</div><div class="line">	where后面只能跟数据表字段：</div><div class="line"></div><div class="line">聚合函数</div><div class="line">	•	avg()，返回指定组中的平均值。</div><div class="line">	•	count()，返回指定组中项目的数量；</div><div class="line">	•	max()，返回指定组中数据最大值；</div><div class="line">	•	min()，返回指定组中数据最小值；</div><div class="line">	•	sum()，返回指定组中数据的和</div><div class="line"></div><div class="line">	group_concat([DISTINCT] 要连接的字段 [Order BY ASC/DESC 排序字段] [Separator &apos;分隔符&apos;]) </div><div class="line">	inet_aton(&apos;IP地址&apos;):把IP地址装换成整型</div><div class="line">	inet_ntoa(&apos;整数&apos;):整数转回ip</div><div class="line">	mysqli_affected_rows() 函数返回前一次 MySQL 操作（SELECT、INSERT、UPDATE、REPLACE、DELETE）所影响的记录行数。</div><div class="line">	mysql_affected_rows() 函数返回前一次 MySQL 操作所影响的记录行数,INSERT，UPDATE 或 DELETE 查询所影响的记录行数。</div><div class="line"></div><div class="line">返回值</div><div class="line">inet_aton(&apos;IP地址&apos;):把IP地址装换成整型</div><div class="line">inet_ntoa(&apos;整数&apos;):整数转回ip</div><div class="line">group_concat([DISTINCT] 要连接的字段 [Order BY ASC/DESC 排序字段] [Separator &apos;分隔符&apos;]) </div><div class="line"></div><div class="line">•	sum()，返回指定组中数据的和</div><div class="line">•	min()，返回指定组中数据最小值；</div><div class="line">•	max()，返回指定组中数据最大值；</div><div class="line">•	count()，返回指定组中项目的数量；</div><div class="line">•	avg()，返回指定组中的平均值。</div><div class="line"></div><div class="line">分组group by 子句</div><div class="line">	select count(字段) from tb_name 通常自动忽略空值</div><div class="line">	select 字段列表 from 表名 [where子句] [group by 子句]；</div><div class="line">	适用于没有having的条件情况</div><div class="line">select count(distinct(column)) from table #可以用到索引</div><div class="line">	子查询</div><div class="line">select count(*) from (select dealer_id  from card GROUP BY dealer_id)as tmp;</div><div class="line"></div><div class="line">模糊查询：使用匹配符‘%’，‘_’</div><div class="line">	%:匹配任意多个字符</div><div class="line">	_:匹配一个字符</div><div class="line">from子句：</div><div class="line">	跟单表</div><div class="line">	多张表（笛卡儿积，无连接条件）</div><div class="line"></div><div class="line">where子句：where 子句对from子句返回的信息进行筛选，满足条件的作为结果集返回。</div><div class="line">基本语法：</div><div class="line">	select 字段列表 from tb_name；</div><div class="line">	as  字段别名：在结果集使用别名</div><div class="line">	字段列表选项all/distinct：</div><div class="line">			all:不去除结果集中的重复行。</div><div class="line">			distinct可以去除结果集中的重复行</div><div class="line">	from子句：</div><div class="line">		跟单表</div><div class="line">		多张表（笛卡儿积，无连接条件）</div><div class="line"></div><div class="line">where子句：where 子句对from子句返回的信息进行筛选，满足条件的作为结果集返回。</div><div class="line">字段列表选项all/distinct：</div><div class="line">		all:不去除结果集中的重复行。</div><div class="line">		distinct可以去除结果集中的重复行</div><div class="line">as  字段别名：在结果集使用别名</div><div class="line">select 字段列表 from tb_name；</div><div class="line">注意：</div><div class="line">字段列表中可以有数据表中本身字段组合而成的字段：</div><div class="line">	字段列表可以是一个字段，可以是多个，可以使用*代替全部字段。</div></pre></td></tr></table></figure>
+
       
     </div>
 
@@ -463,6 +487,12 @@
     </div>
 
     <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/MySQL/" rel="tag"># MySQL</a>
+          
+        </div>
       
 
       
@@ -534,8 +564,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview sidebar-panel sidebar-panel-active">
+      <section class="site-overview sidebar-panel">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
           <img class="site-author-image" itemprop="image"
                src="/uploads/avatar.png"
@@ -658,6 +697,22 @@
 
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#MySQL数据表操作"><span class="nav-number">1.</span> <span class="nav-text">MySQL数据表操作</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#数据的写操作"><span class="nav-number">1.1.</span> <span class="nav-text">数据的写操作</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#数据的读操作"><span class="nav-number">1.2.</span> <span class="nav-text">数据的读操作</span></a></li></ol></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
