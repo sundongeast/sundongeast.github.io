@@ -4,6 +4,56 @@
 
     
   <url>
+    <loc>http://yoursite.com/2017/05/16/MySQL%E6%95%B0%E6%8D%AE%E5%BA%93%E5%9F%BA%E6%9C%AC%E6%93%8D%E4%BD%9C/</loc>
+    <lastmod>2017-05-16T15:11:03.332Z</lastmod>
+    <data>
+        <display>
+        <title>MySQL数据库基本操作</title>
+        <pubTime>2017-05-16T14:55:14.000Z</pubTime>
+        
+        <tag>MySQL</tag>
+         
+         
+           
+             
+              <breadCrumb title="MySQL" url="http://yoursite.com/categories/MySQL/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://yoursite.com/2017/05/16/MySQL%E6%95%B0%E6%8D%AE%E5%BA%93%E4%BC%98%E5%8C%96/</loc>
+    <lastmod>2017-05-16T14:56:11.683Z</lastmod>
+    <data>
+        <display>
+        <title>MySQL数据库优化</title>
+        <pubTime>2017-05-16T14:56:11.000Z</pubTime>
+        
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://yoursite.com/2017/05/16/MySQL%E6%95%B0%E6%8D%AE%E8%A1%A8%E6%93%8D%E4%BD%9C/</loc>
+    <lastmod>2017-05-16T14:55:56.150Z</lastmod>
+    <data>
+        <display>
+        <title>MySQL数据表操作</title>
+        <pubTime>2017-05-16T14:55:56.000Z</pubTime>
+        
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>http://yoursite.com/2017/05/15/PHPStorm%E5%B8%B8%E7%94%A8%E6%8F%92%E4%BB%B6%E5%8F%8A%E5%BF%AB%E6%8D%B7%E9%94%AE/</loc>
     <lastmod>2017-05-15T14:27:15.079Z</lastmod>
     <data>

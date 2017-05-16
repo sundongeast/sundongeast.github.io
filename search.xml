@@ -44,6 +44,111 @@
     </entry>
     
     <entry>
+      <title><![CDATA[MySQL数据库优化]]></title>
+      <url>/2017/05/16/MySQL%E6%95%B0%E6%8D%AE%E5%BA%93%E4%BC%98%E5%8C%96/</url>
+      <content type="html"></content>
+      
+        
+    </entry>
+    
+    <entry>
+      <title><![CDATA[MySQL数据表操作]]></title>
+      <url>/2017/05/16/MySQL%E6%95%B0%E6%8D%AE%E8%A1%A8%E6%93%8D%E4%BD%9C/</url>
+      <content type="html"></content>
+      
+        
+    </entry>
+    
+    <entry>
+      <title><![CDATA[MySQL数据库基本操作]]></title>
+      <url>/2017/05/16/MySQL%E6%95%B0%E6%8D%AE%E5%BA%93%E5%9F%BA%E6%9C%AC%E6%93%8D%E4%BD%9C/</url>
+      <content type="html"><![CDATA[<p>##MySQL数据库基本操作</p>
+<blockquote>
+<p>书到用时方恨少。</p>
+<p>MySQL数据库启动和关闭</p>
+<ol>
+<li>按下win+r，在输入框输入services.msc，点击确定就可以打开服务窗口。</li>
+<li>cmd命令行:以管理员的身份运行，net start|stop mysql</li>
+</ol>
+<p>数据库的登陆和退出</p>
+<ol>
+<li>登录数据库: mysql[.exe] [-h主机名] [-P端口号] -u用户名    -p密码。</li>
+<li>退出数据库：exit、quit、\q    : 必须是反斜杠。</li>
+</ol>
+<p>查看所有的数据库</p>
+<ol>
+<li>show databases</li>
+<li>初始状态下有四个数据库。</li>
+<li>information_shema: 存放数据库相关信息，表格相关信息以及字符集编码和校对集。</li>
+<li>mysql:    存放的是用户的相关信息，用户名和密码以及用户的权限。</li>
+<li>performance_shema:        数据库的性能参数。</li>
+<li>test:专门供用户测试练习使用的数据库。</li>
+</ol>
+<p>查看某条数据创建语句</p>
+<ol>
+<li>show create database 数据库名称</li>
+</ol>
+<p>创建数据库</p>
+<ol>
+<li>create database [if not exists] 数据库名称 [charset 字符集编码]</li>
+</ol>
+<p>选择数据库</p>
+<ol>
+<li>use 数据库名称</li>
+</ol>
+<p>删除数据库</p>
+<ol>
+<li>drop database [if exists] 数据库名称</li>
+</ol>
+<p>修改数据库：alter database </p>
+<p>数据库名称 charset = 字符集编码</p>
+<p>显示所有的字符集编码：</p>
+<ol>
+<li>cmd    ：   show character set </li>
+</ol>
+<p>查看数据库各个结构的字符集编码：</p>
+<ol>
+<li>show variables like ‘character<em>set</em>%’;</li>
+</ol>
+<p>创建数据库时修改</p>
+<ol>
+<li>create database 数据库名称 charset=字符集  collate=校验集<br>创建表格时修改</li>
+<li>create table 表名()charset=字符集 collate=校验集<br>创建和修改数据库，表格和字段的字符集编码以及校验集<br>创建数据库时修改</li>
+<li>create database 数据库名称 charset=字符集  collate=校验集<br>创建表格时修改</li>
+<li>create table 表名()charset=字符集 collate=校验集<br>创建字段时修改</li>
+<li>create table 表名( 字段名 字段数据类型 字段属性 charset 字符集 collate 校验集);<br>设置字段时，校验集和字符集不能加上=，用空格区分。</li>
+</ol>
+<p>创建字段时修改</p>
+<ol>
+<li>create table 表名( 字段名 字段数据类型 字段属性 charset 字符集 collate 校验集);<br>设置字段时，校验集和字符集不能加上=，用空格区分。</li>
+</ol>
+<p>数据库的原子操作CRUD</p>
+<ol>
+<li>增删改查介绍</li>
+<li>C:Create（ insert ），写入</li>
+<li>U:Update，更新</li>
+<li>R:Read(select)：查询</li>
+<li>D:Delete（drop）</li>
+</ol>
+</blockquote>
+]]></content>
+      
+        <categories>
+            
+            <category> MySQL </category>
+            
+        </categories>
+        
+        
+        <tags>
+            
+            <tag> MySQL </tag>
+            
+        </tags>
+        
+    </entry>
+    
+    <entry>
       <title><![CDATA[PHPStorm常用插件及快捷键]]></title>
       <url>/2017/05/15/PHPStorm%E5%B8%B8%E7%94%A8%E6%8F%92%E4%BB%B6%E5%8F%8A%E5%BF%AB%E6%8D%B7%E9%94%AE/</url>
       <content type="html"><![CDATA[<blockquote>
