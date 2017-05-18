@@ -4,6 +4,26 @@
 
     
   <url>
+    <loc>http://yoursite.com/2018/05/20/%E5%AD%A6%E4%B9%A0%E8%BF%99%E6%9D%A1%E8%B7%AF%E6%B0%B8%E8%BF%9C%E4%B8%8D%E6%AD%A2%E4%BD%A0%E4%B8%80%E4%BA%BA%E5%9C%A8%E5%A5%8B%E6%96%97/</loc>
+    <lastmod>2017-05-18T08:15:52.672Z</lastmod>
+    <data>
+        <display>
+        <title>学习这条路永远不止你一人在奋斗</title>
+        <pubTime>2018-05-20T05:14:00.000Z</pubTime>
+        
+        <tag>study</tag>
+         
+         
+           
+             
+              <breadCrumb title="study" url="http://yoursite.com/categories/study/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>http://yoursite.com/2017/05/18/%E5%85%B3%E4%BA%8E%E4%BB%A3%E7%A0%81%E6%B3%A8%E9%87%8A%E8%A7%84%E8%8C%83/</loc>
     <lastmod>2017-05-18T08:08:25.491Z</lastmod>
     <data>
@@ -194,26 +214,6 @@
            
              
               <breadCrumb title="php" url="http://yoursite.com/categories/php/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://yoursite.com/2018/05/20/%E5%AD%A6%E4%B9%A0%E8%BF%99%E6%9D%A1%E8%B7%AF%E6%B0%B8%E8%BF%9C%E4%B8%8D%E6%AD%A2%E4%BD%A0%E4%B8%80%E4%BA%BA%E5%9C%A8%E5%A5%8B%E6%96%97/</loc>
-    <lastmod>2017-05-11T04:19:08.813Z</lastmod>
-    <data>
-        <display>
-        <title>学习这条路永远不止你一人在奋斗</title>
-        <pubTime>2018-05-20T05:14:00.000Z</pubTime>
-        
-        <tag>study</tag>
-         
-         
-           
-             
-              <breadCrumb title="study" url="http://yoursite.com/categories/study/"/>
           
         </display>
     </data>
