@@ -44,6 +44,74 @@
     </entry>
     
     <entry>
+      <title><![CDATA[关于代码注释规范]]></title>
+      <url>/2017/05/18/%E5%85%B3%E4%BA%8E%E4%BB%A3%E7%A0%81%E6%B3%A8%E9%87%8A%E8%A7%84%E8%8C%83/</url>
+      <content type="html"><![CDATA[<blockquote>
+<p>工作中经常遇到不写注释的程序员，让我们难以理解代码的含义。代码的注释可以让我们更快地熟悉代码的结构，以及更好的优化代码。好的注释让人耳目一新，敲起代码也是键盘不离手。那么如何写好注释呢，我在网上查看了一些攻略，这就分享给大家。</p>
+</blockquote>
+<h2 id="编程注释规范"><a href="#编程注释规范" class="headerlink" title="编程注释规范"></a>编程注释规范</h2><p>黄金定律——不管有多少人共同参与同一项目，一定要确保每一行代码都像是同一个人编写的。</p>
+<h2 id="注释规范"><a href="#注释规范" class="headerlink" title="注释规范"></a>注释规范</h2><p>编码规范中有一条很重要—见名知意，有时候直白的函数名还不能表达完整的意思，这个时候注释就出场了，代码是由人编写并维护的。请确保你的代码能够自描述、注释良好并且易于他人理解。好的代码注释能够传达上下文关系和代码目的。</p>
+<p>在写代码前就应该添加注释，这时在你的脑子里的是清晰完整的思路。<br>如果在代码最后再添加注释，它将花费你双倍的时间。</p>
+<h2 id="注释的写法"><a href="#注释的写法" class="headerlink" title="注释的写法"></a>注释的写法</h2><ol>
+<li><p>html</p>
+<!-- 注释的内容 -->
+</li>
+<li><p>css</p>
+<p>/<em> declarations </em>/</p>
+</li>
+<li><p>javascript</p>
+<p> // 注释内容<br>/<em> 注释内容 </em>/</p>
+</li>
+</ol>
+<h3 id="单行注释格式"><a href="#单行注释格式" class="headerlink" title="单行注释格式"></a>单行注释格式</h3><blockquote>
+<p>双斜线后，必须跟注释内容保留一个空格。<br>可独占一行，前边不许有空行，缩进与下一行代码保持一致。<br>可位于一个代码行的末尾，注意这里的格式。<br>双斜线距离分号四个空格。</p>
+</blockquote>
+<h3 id="多行注释格式"><a href="#多行注释格式" class="headerlink" title="多行注释格式"></a>多行注释格式</h3><blockquote>
+<p>最少三行（前边留空一行,下面情景使用）</p>
+</blockquote>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">- 难以理解的代码段</div><div class="line">- 可能存在错误的代码段</div><div class="line">- 浏览器特殊的HACK代码</div><div class="line">- 想吐槽的产品逻辑，合作同事</div><div class="line">- 业务逻辑强的相关代码</div></pre></td></tr></table></figure>
+<ol>
+<li>文件信息头注释<br>/**</li>
+</ol>
+<ul>
+<li>@version $Id: HTML.php,v 1.5 2016/01/23 03:21:16 kochp Exp $</li>
+<li>@package index</li>
+<li>@copyright (C) 2016 - 2017 Miro International Pty Ltd</li>
+<li>@license <a href="http://www.sun.org/copyleft/index.html" target="_blank" rel="external">http://www.sun.org/copyleft/index.html</a> GNU/GPL</li>
+<li>*/</li>
+</ul>
+<p>备注说明：</p>
+<ol>
+<li>第一行以 ‘/<em>*’ 开头，最后一行以 ‘</em>/’结束。中间每行以 ‘* ‘开始。</li>
+<li><p>注释关键字以 ‘@’ 为关键字，具体关键含义如下：[详见关键字见附录]</p>
+<figure class="highlight php"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div></pre></td><td class="code"><pre><div class="line">	附录：注释关键字含义列表：</div><div class="line">	@version 版本信息；</div><div class="line">	@package 封装包名称，或所属包名称；</div><div class="line">	@copyright 版权信息；</div><div class="line">	@license 许可证协议信息；</div><div class="line">	@param 参数定义；</div><div class="line">	@author 作者；</div><div class="line">	@example 实例；</div><div class="line">	@<span class="keyword">abstract</span> 摘要，梗概；</div><div class="line">	@access 使用权限或前置条件；</div><div class="line">	@deprecated 声明事项；</div><div class="line">	@<span class="keyword">exception</span> 特例，特殊情况；</div><div class="line">	@<span class="keyword">final</span> 最后，最终；</div><div class="line">	@<span class="keyword">global</span> 总体的，全局</div><div class="line">	@subpackage 替代包</div><div class="line">	@name 文件名</div><div class="line">各类标签可以参考[http:<span class="comment">//usejsdoc.org/](http://usejsdoc.org/)</span></div></pre></td></tr></table></figure>
+</li>
+<li><p>注释内容与星标前保留一个空格。</p>
+</li>
+<li>多人合作注释（同一个文件的代码可能被多个人修改，这个时候需要标识出谁改动了哪些部分。格式： <code>// add begin by 作者名</code> ,一个分号<code>;</code>，再加上原因 <code>Reason</code>,代码添加的最后加上：<code>//add end</code>）;<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div></pre></td><td class="code"><pre><div class="line">Example</div><div class="line"></div><div class="line">// add begin by sundong ; Init post&apos;s id </div><div class="line">var postId = 1;</div><div class="line">//end add</div><div class="line">或者</div><div class="line">// add begin by sundong </div><div class="line">/**</div><div class="line"> * 多行注释说明原因</div><div class="line"> */</div><div class="line">var postId = 1;</div><div class="line">//end add</div></pre></td></tr></table></figure>
+</li>
+</ol>
+<blockquote>
+<p>祝你生活愉快，未完待续…</p>
+</blockquote>
+]]></content>
+      
+        <categories>
+            
+            <category> php </category>
+            
+        </categories>
+        
+        
+        <tags>
+            
+            <tag> annotation </tag>
+            
+        </tags>
+        
+    </entry>
+    
+    <entry>
       <title><![CDATA[MySQL数据库优化]]></title>
       <url>/2017/05/16/MySQL%E6%95%B0%E6%8D%AE%E5%BA%93%E4%BC%98%E5%8C%96/</url>
       <content type="html"><![CDATA[<h2 id="百万级数据如何进行优化"><a href="#百万级数据如何进行优化" class="headerlink" title="百万级数据如何进行优化"></a>百万级数据如何进行优化</h2><blockquote>
