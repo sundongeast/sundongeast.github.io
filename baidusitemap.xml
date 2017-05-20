@@ -4,15 +4,20 @@
 
     
   <url>
-    <loc>http://yoursite.com/2017/05/19/composerr%E7%9A%84%E5%B8%B8%E8%A7%84%E6%93%8D%E4%BD%9C/</loc>
-    <lastmod>2017-05-19T13:16:09.988Z</lastmod>
+    <loc>http://yoursite.com/2017/05/19/composer%E7%9A%84%E5%B8%B8%E8%A7%84%E6%93%8D%E4%BD%9C/</loc>
+    <lastmod>2017-05-20T00:36:20.554Z</lastmod>
     <data>
         <display>
         <title>composerr的常规操作</title>
         <pubTime>2017-05-19T13:16:09.000Z</pubTime>
         
+        <tag>composer</tag>
+         
          
            
+             
+              <breadCrumb title="php" url="http://yoursite.com/categories/php/"/>
+          
         </display>
     </data>
     </url>
