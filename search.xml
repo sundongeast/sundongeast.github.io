@@ -48,7 +48,12 @@
     <entry>
       <title><![CDATA[composerr的常规操作]]></title>
       <url>/2017/05/19/composer%E7%9A%84%E5%B8%B8%E8%A7%84%E6%93%8D%E4%BD%9C/</url>
-      <content type="html"><![CDATA[<h1 id="词条：composer"><a href="#词条：composer" class="headerlink" title="词条：composer"></a>词条：composer</h1><p>  Composer 是 PHP5.3以上 的一个依赖(dependency)管理工具。它允许你申明项目所依赖的代码库，它会在你的项目中为你安装他们。Composer 不是一个包管理器。是的，它涉及 “packages” 和 “libraries”，但它在每个项目的基础上进行管理，在你项目的某个目录中（例如 vendor）进行安装。默认情况下它不会在全局安装任何东西。因此，这仅仅是一个依赖管理。</p>
+      <content type="html"><![CDATA[<h1 id="词条：composer"><a href="#词条：composer" class="headerlink" title="词条：composer"></a>词条：composer</h1><p>  Composer 是 PHP5.3以上 的一个依赖(dependency)管理工具。它允许你申明项目所依赖的代码库，它会在你的项目中为你安装他们。Composer 不是一个包管理器。是的，它涉及 “packages” 和 “libraries”，但它在每个项目的基础上进行管理，在你项目的某个目录中（例如 vendor）进行安装。默认情况下它不会在全局安装任何东西。因此，这仅仅是一个依赖管理。’</p>
+<p>  composer install 背后到底是怎么运作的？<br><img src="http://image.phpcomposer.com/3/06/71554febd8a45c1aed1ba3b0aaf0d.png" alt="一张图来说明一下"></p>
+<p>Composer 就是我们安装在自己系统上的 composer 工具。所有 package 元数据和 zip 文件的下载、安装工作都是它帮我们完成的。</p>
+<h1 id="从零开始，自己造一个-Proxy"><a href="#从零开始，自己造一个-Proxy" class="headerlink" title="从零开始，自己造一个 Proxy"></a>从零开始，自己造一个 Proxy</h1><p>这就是我们的重点了！我们从零开始重写了一个镜像程序，将 Packagist.org 和 Github.com 完美的镜像到国内，并且通过 又拍云 的 CDN 加速，composer install 的速度提升了至少十几倍。</p>
+<h1 id="镜像的实现原理"><a href="#镜像的实现原理" class="headerlink" title="镜像的实现原理"></a>镜像的实现原理</h1><p><img src="http://image.phpcomposer.com/a/9e/913f6809905d56039602d7fb34e27.png" alt="一张说明一下"></p>
+<p>全量镜像和你同在“中国局域网”内，而且配合 CDN 加速，速度当然杠杠滴！</p>
 <h1 id="composer的安装"><a href="#composer的安装" class="headerlink" title="composer的安装"></a>composer的安装</h1><p>   方法一：安装地址：<a href="https://pkg.phpcomposer.com/" target="_blank" rel="external">https://pkg.phpcomposer.com/</a><br>   方法二：安装地址:<a href="http://docs.phpcomposer.com/00-intro.html" target="_blank" rel="external">http://docs.phpcomposer.com/00-intro.html</a></p>
 <h1 id="composer的卸载"><a href="#composer的卸载" class="headerlink" title="composer的卸载"></a>composer的卸载</h1><p>  如果你的 composer 不小心出现什么问题了，用 composer update也解决不了问题，那么你可以试试卸载后重新安装。</p>
 <p>  方法一：删除composer目录（其实 composer 就是一些 php 文件，你只要找到将他们删除即可。）：<code>composer config -l -g | grep &quot;home|dir&quot; -E</code> ,找到对应的目录删除即可。卸载全觉composer命令。首先，我们经常会将 composer 配置成全局命令，这时，我们可以用<code>where composer</code> 或者<code>type composer</code>找到对应路径，然后 rm 掉即可。</p>
@@ -57,6 +62,7 @@
 <blockquote>
 <p>未完待续…</p>
 </blockquote>
+<h2 id="友情链接"><a href="#友情链接" class="headerlink" title="友情链接"></a>友情链接</h2><p><a href="http://www.phpcomposer.com/packagist-composer-chinese-mirror-reloaded/" target="_blank" rel="external">www.phpcomposer.com</a></p>
 ]]></content>
       
         <categories>
