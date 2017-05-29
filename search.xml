@@ -46,7 +46,7 @@
     </entry>
     
     <entry>
-      <title><![CDATA[composerr的常规操作]]></title>
+      <title><![CDATA[composer的常规操作]]></title>
       <url>/2017/05/19/composer%E7%9A%84%E5%B8%B8%E8%A7%84%E6%93%8D%E4%BD%9C/</url>
       <content type="html"><![CDATA[<h1 id="词条：composer"><a href="#词条：composer" class="headerlink" title="词条：composer"></a>词条：composer</h1><p>  Composer 是 PHP5.3以上 的一个依赖(dependency)管理工具。它允许你申明项目所依赖的代码库，它会在你的项目中为你安装他们。Composer 不是一个包管理器。是的，它涉及 “packages” 和 “libraries”，但它在每个项目的基础上进行管理，在你项目的某个目录中（例如 vendor）进行安装。默认情况下它不会在全局安装任何东西。因此，这仅仅是一个依赖管理。’</p>
 <p>  composer install 背后到底是怎么运作的？<br><img src="http://image.phpcomposer.com/3/06/71554febd8a45c1aed1ba3b0aaf0d.png" alt="一张图来说明一下"></p>
